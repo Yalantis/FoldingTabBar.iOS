@@ -38,8 +38,8 @@ YALFoldingTabBar is a subclass of a standard UIView. We wanted to make this comp
 
 Each separate tabBarItem can have two additional buttons on the left and right. These buttons can be used to let a user interact with a selected screen on the YALFoldingTabBarController without even having to leave it. 
 
-####YALFoldingTabBar
-`YALFoldingTabBar` is a model to configure your tab bar items with images. 
+####YALTabBarItem
+`YALTabBarItem` is a model to configure your tab bar items with images. 
 
 
 ##Usage
