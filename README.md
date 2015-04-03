@@ -1,7 +1,7 @@
 # FoldingTabBar.iOS
 ![Preview](https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2003376/tab_bar_animation_fin-02.gif)
 
-Custom TabBarController.
+Folding Tab Bar and Tab Bar Controller
 
 Made in [Yalantis](http://yalantis.com/).
 
