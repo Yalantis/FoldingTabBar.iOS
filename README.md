@@ -102,7 +102,7 @@ You can see how we did it on the example project.
 ##Tips for customization
 You can make the following configurations for custom tabBar:
 
-1) Specify height :
+1) Specify height 
 ```objective-c
 tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
 ```  
