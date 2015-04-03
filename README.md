@@ -6,6 +6,7 @@ Folding Tab Bar and Tab Bar Controller
 Made in [Yalantis](http://yalantis.com/).
 
 Inspired by [this project on Dribble](https://dribbble.com/shots/2003376-Tab-Bar-Animation)
+Also, read how it was done in our [blog](http://yalantis.com/blog/how_we_created_tab_bar_animation_for_ios/)
 
 ## Requirements
 iOS 8.0
