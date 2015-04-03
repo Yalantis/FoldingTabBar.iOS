@@ -15,9 +15,8 @@ iOS 8.0
 ## Installation
 
 ####[CocoaPods](http://cocoapods.org)
-Will be available soon
 ```ruby
-pod 'YALFoldingTabBar', '~> 1.0.0'
+pod 'FoldingTabBar', '~> 1.0.0'
 ```
 
 ####Manual Installation
