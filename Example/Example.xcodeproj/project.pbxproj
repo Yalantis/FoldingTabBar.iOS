@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EDA443B1AC5667500AE33CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44121AC5667500AE33CD /* AppDelegate.m */; };
+		3EDA443D1AC5667500AE33CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44191AC5667500AE33CD /* Images.xcassets */; };
+		3EDA443F1AC5667500AE33CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA441B1AC5667500AE33CD /* main.m */; };
+		3EDA44411AC5667500AE33CD /* Code Pro LC.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44221AC5667500AE33CD /* Code Pro LC.otf */; };
+		3EDA44421AC5667500AE33CD /* Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44231AC5667500AE33CD /* Proxima Nova Regular.otf */; };
+		3EDA44431AC5667500AE33CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44251AC5667500AE33CD /* Main.storyboard */; };
+		3EDA44441AC5667500AE33CD /* YALChatDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44291AC5667500AE33CD /* YALChatDemoCollectionViewCell.m */; };
+		3EDA44451AC5667500AE33CD /* YALFirstTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA442D1AC5667500AE33CD /* YALFirstTestViewController.m */; };
+		3EDA44461AC5667500AE33CD /* YALFourthTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44301AC5667500AE33CD /* YALFourthTestViewController.m */; };
+		3EDA44471AC5667500AE33CD /* YALSecondTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44331AC5667500AE33CD /* YALSecondTestViewController.m */; };
+		3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44351AC5667500AE33CD /* YALChatDemoList.plist */; };
+		3EDA44491AC5667500AE33CD /* YALThirdTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */; };
+		3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */; };
+		C92CAA6C1ACE8B7000F5645A /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */; };
+		C92CAA6D1ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */; };
+		C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		C92CAA6F1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */; };
+		C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */; };
+		C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */; };
+		C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E4B87B81A94E87A00419B25 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDA44111AC5667500AE33CD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EDA44121AC5667500AE33CD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EDA44191AC5667500AE33CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3EDA441A1AC5667500AE33CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EDA441B1AC5667500AE33CD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EDA44221AC5667500AE33CD /* Code Pro LC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Code Pro LC.otf"; sourceTree = "<group>"; };
+		3EDA44231AC5667500AE33CD /* Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		3EDA44251AC5667500AE33CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3EDA44281AC5667500AE33CD /* YALChatDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALChatDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		3EDA44291AC5667500AE33CD /* YALChatDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALChatDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		3EDA442C1AC5667500AE33CD /* YALFirstTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFirstTestViewController.h; sourceTree = "<group>"; };
+		3EDA442D1AC5667500AE33CD /* YALFirstTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFirstTestViewController.m; sourceTree = "<group>"; };
+		3EDA442F1AC5667500AE33CD /* YALFourthTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFourthTestViewController.h; sourceTree = "<group>"; };
+		3EDA44301AC5667500AE33CD /* YALFourthTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFourthTestViewController.m; sourceTree = "<group>"; };
+		3EDA44321AC5667500AE33CD /* YALSecondTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSecondTestViewController.h; sourceTree = "<group>"; };
+		3EDA44331AC5667500AE33CD /* YALSecondTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSecondTestViewController.m; sourceTree = "<group>"; };
+		3EDA44351AC5667500AE33CD /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
+		3EDA44361AC5667500AE33CD /* YALThirdTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALThirdTestViewController.h; sourceTree = "<group>"; };
+		3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALThirdTestViewController.m; sourceTree = "<group>"; };
+		3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		C92CAA4F1ACE8B7000F5645A /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		C92CAA541ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		C92CAA581ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		C92CAA5B1ACE8B7000F5645A /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		C92CAA5F1ACE8B7000F5645A /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		C92CAA631ACE8B7000F5645A /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		C92CAA671ACE8B7000F5645A /* YALTabBarInteracting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarInteracting.h; sourceTree = "<group>"; };
+		C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E4B87B51A94E87A00419B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E4B87AF1A94E87A00419B25 = {
+			isa = PBXGroup;
+			children = (
+				3EDA440F1AC5667500AE33CD /* Example */,
+				3E4B87B91A94E87A00419B25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E4B87B91A94E87A00419B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E4B87B81A94E87A00419B25 /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EDA440F1AC5667500AE33CD /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44241AC5667500AE33CD /* Storyboard */,
+				3EDA44101AC5667500AE33CD /* AppDelegate */,
+				3EDA442A1AC5667500AE33CD /* ViewControllers */,
+				3EDA44261AC5667500AE33CD /* View */,
+				C92CAA4C1ACE8B7000F5645A /* FoldingTabBar */,
+				3EDA44201AC5667500AE33CD /* Resources */,
+				3EDA44381AC5667500AE33CD /* Xib */,
+				3EDA44191AC5667500AE33CD /* Images.xcassets */,
+				3EDA441A1AC5667500AE33CD /* Info.plist */,
+				3EDA441B1AC5667500AE33CD /* main.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		3EDA44101AC5667500AE33CD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44111AC5667500AE33CD /* AppDelegate.h */,
+				3EDA44121AC5667500AE33CD /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3EDA44201AC5667500AE33CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44211AC5667500AE33CD /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EDA44211AC5667500AE33CD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44221AC5667500AE33CD /* Code Pro LC.otf */,
+				3EDA44231AC5667500AE33CD /* Proxima Nova Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3EDA44241AC5667500AE33CD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44251AC5667500AE33CD /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3EDA44261AC5667500AE33CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44271AC5667500AE33CD /* ChatDemoCollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EDA44271AC5667500AE33CD /* ChatDemoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44281AC5667500AE33CD /* YALChatDemoCollectionViewCell.h */,
+				3EDA44291AC5667500AE33CD /* YALChatDemoCollectionViewCell.m */,
+			);
+			path = ChatDemoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		3EDA442A1AC5667500AE33CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA442B1AC5667500AE33CD /* YALFirstTestViewController */,
+				3EDA442E1AC5667500AE33CD /* YALFouthTestViewController */,
+				3EDA44311AC5667500AE33CD /* YALSecondTestViewController */,
+				3EDA44341AC5667500AE33CD /* YALThirdTestViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3EDA442B1AC5667500AE33CD /* YALFirstTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA442C1AC5667500AE33CD /* YALFirstTestViewController.h */,
+				3EDA442D1AC5667500AE33CD /* YALFirstTestViewController.m */,
+			);
+			path = YALFirstTestViewController;
+			sourceTree = "<group>";
+		};
+		3EDA442E1AC5667500AE33CD /* YALFouthTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA442F1AC5667500AE33CD /* YALFourthTestViewController.h */,
+				3EDA44301AC5667500AE33CD /* YALFourthTestViewController.m */,
+			);
+			path = YALFouthTestViewController;
+			sourceTree = "<group>";
+		};
+		3EDA44311AC5667500AE33CD /* YALSecondTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44321AC5667500AE33CD /* YALSecondTestViewController.h */,
+				3EDA44331AC5667500AE33CD /* YALSecondTestViewController.m */,
+			);
+			path = YALSecondTestViewController;
+			sourceTree = "<group>";
+		};
+		3EDA44341AC5667500AE33CD /* YALThirdTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44351AC5667500AE33CD /* YALChatDemoList.plist */,
+				3EDA44361AC5667500AE33CD /* YALThirdTestViewController.h */,
+				3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */,
+			);
+			path = YALThirdTestViewController;
+			sourceTree = "<group>";
+		};
+		3EDA44381AC5667500AE33CD /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA44391AC5667500AE33CD /* LaunchXib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3EDA44391AC5667500AE33CD /* LaunchXib */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */,
+			);
+			path = LaunchXib;
+			sourceTree = "<group>";
+		};
+		C92CAA4C1ACE8B7000F5645A /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA4D1ACE8B7000F5645A /* Animation */,
+				C92CAA511ACE8B7000F5645A /* Category */,
+				C92CAA5A1ACE8B7000F5645A /* Constants */,
+				C92CAA5D1ACE8B7000F5645A /* Controller */,
+				C92CAA611ACE8B7000F5645A /* Model */,
+				C92CAA651ACE8B7000F5645A /* Protocol */,
+				C92CAA681ACE8B7000F5645A /* View */,
+			);
+			name = FoldingTabBar;
+			path = ../../FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		C92CAA4D1ACE8B7000F5645A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA4E1ACE8B7000F5645A /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		C92CAA4E1ACE8B7000F5645A /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA4F1ACE8B7000F5645A /* YALSpringAnimation.h */,
+				C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		C92CAA511ACE8B7000F5645A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA521ACE8B7000F5645A /* CAAnimation */,
+				C92CAA561ACE8B7000F5645A /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C92CAA521ACE8B7000F5645A /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA531ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		C92CAA531ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA541ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.h */,
+				C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		C92CAA561ACE8B7000F5645A /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA571ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		C92CAA571ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA581ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		C92CAA5A1ACE8B7000F5645A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA5B1ACE8B7000F5645A /* YALAnimatingTabBarConstants.h */,
+				C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C92CAA5D1ACE8B7000F5645A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA5E1ACE8B7000F5645A /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C92CAA5E1ACE8B7000F5645A /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA5F1ACE8B7000F5645A /* YALFoldingTabBarController.h */,
+				C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		C92CAA611ACE8B7000F5645A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA621ACE8B7000F5645A /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C92CAA621ACE8B7000F5645A /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA631ACE8B7000F5645A /* YALTabBarItem.h */,
+				C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		C92CAA651ACE8B7000F5645A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA661ACE8B7000F5645A /* TabBarInteracting */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C92CAA661ACE8B7000F5645A /* TabBarInteracting */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA671ACE8B7000F5645A /* YALTabBarInteracting.h */,
+			);
+			path = TabBarInteracting;
+			sourceTree = "<group>";
+		};
+		C92CAA681ACE8B7000F5645A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA691ACE8B7000F5645A /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C92CAA691ACE8B7000F5645A /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */,
+				C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E4B87B71A94E87A00419B25 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4B87DB1A94E87A00419B25 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				3E4B87B41A94E87A00419B25 /* Sources */,
+				3E4B87B51A94E87A00419B25 /* Frameworks */,
+				3E4B87B61A94E87A00419B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = TabBarObjectiveC;
+			productReference = 3E4B87B81A94E87A00419B25 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E4B87B01A94E87A00419B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Yalantis;
+				TargetAttributes = {
+					3E4B87B71A94E87A00419B25 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 3E4B87B31A94E87A00419B25 /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E4B87AF1A94E87A00419B25;
+			productRefGroup = 3E4B87B91A94E87A00419B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E4B87B71A94E87A00419B25 /* Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E4B87B61A94E87A00419B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDA44411AC5667500AE33CD /* Code Pro LC.otf in Resources */,
+				3EDA44431AC5667500AE33CD /* Main.storyboard in Resources */,
+				3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */,
+				3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */,
+				3EDA44421AC5667500AE33CD /* Proxima Nova Regular.otf in Resources */,
+				3EDA443D1AC5667500AE33CD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E4B87B41A94E87A00419B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */,
+				C92CAA6C1ACE8B7000F5645A /* YALSpringAnimation.m in Sources */,
+				C92CAA6D1ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				3EDA443F1AC5667500AE33CD /* main.m in Sources */,
+				3EDA44441AC5667500AE33CD /* YALChatDemoCollectionViewCell.m in Sources */,
+				3EDA44451AC5667500AE33CD /* YALFirstTestViewController.m in Sources */,
+				C92CAA6F1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m in Sources */,
+				3EDA44491AC5667500AE33CD /* YALThirdTestViewController.m in Sources */,
+				C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */,
+				C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				3EDA44461AC5667500AE33CD /* YALFourthTestViewController.m in Sources */,
+				3EDA443B1AC5667500AE33CD /* AppDelegate.m in Sources */,
+				3EDA44471AC5667500AE33CD /* YALSecondTestViewController.m in Sources */,
+				C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3E4B87D91A94E87A00419B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E4B87DA1A94E87A00419B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E4B87DC1A94E87A00419B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Example;
+			};
+			name = Debug;
+		};
+		3E4B87DD1A94E87A00419B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Example;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E4B87B31A94E87A00419B25 /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4B87D91A94E87A00419B25 /* Debug */,
+				3E4B87DA1A94E87A00419B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4B87DB1A94E87A00419B25 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4B87DC1A94E87A00419B25 /* Debug */,
+				3E4B87DD1A94E87A00419B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E4B87B01A94E87A00419B25 /* Project object */;
+}
