@@ -58,9 +58,29 @@
     [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
     [self.tabBar setShadowImage:[[UIImage alloc] init]];
     
-    self.tabBar.hidden = YES;
+//    self.tabBar.hidden = YES;
+    [self addCustomTabBar];
 }
 
+#pragma mark - 将自定义tabBar添加到self.tabBar中(系统的tabBar)中,实现系统tabBar的功能 例如 隐藏...
+- (void)addCustomTabBar{
+    CGFloat tabBarViewOriginX = self.tabBar.frame.origin.x;
+    CGFloat tabBarViewSizeWidth = CGRectGetWidth(self.tabBar.frame);
+    
+    self.tabBarView.frame = CGRectMake(tabBarViewOriginX, 0, tabBarViewSizeWidth, self.tabBarViewHeight);
+    [self.tabBar addSubview:self.tabBarView];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.tabBar.subviews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+        if (![obj isKindOfClass:[YALFoldingTabBar class]]) {
+            [obj removeFromSuperview];
+        }
+    }];
+//    NSLog(@"%@",self.tabBar.subviews);
+}
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
@@ -73,7 +93,7 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    [self updateTabBarViewFrame];
+//    [self updateTabBarViewFrame];
 }
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex {

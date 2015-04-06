@@ -147,4 +147,8 @@ NSString *const YALChatDemeDateText = @"dateText";
     return CGSizeMake(CGRectGetWidth(self.view.bounds), layout.itemSize.height);
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    self.hidesBottomBarWhenPushed = YES;
+}
+
 @end
