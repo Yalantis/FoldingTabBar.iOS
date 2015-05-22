@@ -27,6 +27,7 @@
 		C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */; };
 		C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */; };
 		C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */; };
+		C9D10C9A1B0F324D002CBCA2 /* badge_orage_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		C92CAA671ACE8B7000F5645A /* YALTabBarInteracting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarInteracting.h; sourceTree = "<group>"; };
 		C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
 		C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badge_orage_shadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		3EDA44201AC5667500AE33CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9D10C981B0F324D002CBCA2 /* Images */,
 				3EDA44211AC5667500AE33CD /* Font */,
 			);
 			path = Resources;
@@ -378,6 +381,14 @@
 			path = FoldingTabBar;
 			sourceTree = "<group>";
 		};
+		C9D10C981B0F324D002CBCA2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +451,7 @@
 				3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */,
 				3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */,
 				3EDA44421AC5667500AE33CD /* Proxima Nova Regular.otf in Resources */,
+				C9D10C9A1B0F324D002CBCA2 /* badge_orage_shadow.png in Resources */,
 				3EDA443D1AC5667500AE33CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
