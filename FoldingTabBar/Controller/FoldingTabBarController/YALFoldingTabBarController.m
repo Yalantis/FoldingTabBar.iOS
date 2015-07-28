@@ -134,10 +134,10 @@
     }
 }
 
-- (void)tabBarViewDidCollapsed:(YALFoldingTabBar *)tabBarView {
+- (void)tabBarViewDidCollapse:(YALFoldingTabBar *)tabBarView {
     id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewDidCollapsed)]) {
-        [viewController tabBarViewDidCollapsed];
+    if ([viewController respondsToSelector:@selector(tabBarViewDidCollapse)]) {
+        [viewController tabBarViewDidCollapse];
     }
 }
 
@@ -148,24 +148,24 @@
     }
 }
 
-- (void)tabBarViewDidExpanded:(YALFoldingTabBar *)tabBarView {
+- (void)tabBarViewDidExpand:(YALFoldingTabBar *)tabBarView {
     id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewDidExpanded)]) {
-        [viewController tabBarViewDidExpanded];
+    if ([viewController respondsToSelector:@selector(tabBarViewDidExpand)]) {
+        [viewController tabBarViewDidExpand];
     }
 }
 
-- (void)extraLeftItemDidPressedInTabBarView:(YALFoldingTabBar *)tabBarView {
+- (void)extraLeftItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView {
     id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(extraLeftItemDidPressed)]) {
-        [viewController extraLeftItemDidPressed];
+    if ([viewController respondsToSelector:@selector(extraLeftItemDidPress)]) {
+        [viewController extraLeftItemDidPress];
     }
 }
 
-- (void)extraRightItemDidPressedInTabBarView:(YALFoldingTabBar *)tabBarView {
+- (void)extraRightItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView {
     id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(extraRightItemDidPressed)]) {
-        [viewController extraRightItemDidPressed];
+    if ([viewController respondsToSelector:@selector(extraRightItemDidPress)]) {
+        [viewController extraRightItemDidPress];
     }
 }
 

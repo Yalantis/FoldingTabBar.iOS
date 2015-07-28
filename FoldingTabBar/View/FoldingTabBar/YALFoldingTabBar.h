@@ -21,11 +21,11 @@
 - (void)tabBarViewWillCollapse:(YALFoldingTabBar *)tabBarView;
 - (void)tabBarViewWillExpand:(YALFoldingTabBar *)tabBarView;
 
-- (void)tabBarViewDidCollapsed:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarViewDidExpanded:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarViewDidCollapse:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarViewDidExpand:(YALFoldingTabBar *)tabBarView;
 
-- (void)extraLeftItemDidPressedInTabBarView:(YALFoldingTabBar *)tabBarView;
-- (void)extraRightItemDidPressedInTabBarView:(YALFoldingTabBar *)tabBarView;
+- (void)extraLeftItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView;
+- (void)extraRightItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView;
 
 @end
 

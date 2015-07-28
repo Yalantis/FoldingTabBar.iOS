@@ -11,10 +11,10 @@
 - (void)tabBarViewWillCollapse;
 - (void)tabBarViewWillExpand;
 
-- (void)tabBarViewDidCollapsed;
-- (void)tabBarViewDidExpanded;
+- (void)tabBarViewDidCollapse;
+- (void)tabBarViewDidExpand;
 
-- (void)extraLeftItemDidPressed;
-- (void)extraRightItemDidPressed;
+- (void)extraLeftItemDidPress;
+- (void)extraRightItemDidPress;
 
 @end
