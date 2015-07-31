@@ -290,7 +290,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     self.extraLeftButton.layer.cornerRadius = CGRectGetWidth(self.extraLeftButton.frame) / 2.f;
     self.extraLeftButton.layer.masksToBounds = YES;
     
-    [self.extraLeftButton addTarget:self action:@selector(extraLeftButtonDidPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.extraLeftButton addTarget:self action:@selector(extraLeftButtonDidPress) forControlEvents:UIControlEventTouchUpInside];
     self.extraLeftButton.hidden = YES;
     
     [self addSubview:self.extraLeftButton];
@@ -301,7 +301,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     self.extraLeftButton.layer.masksToBounds = YES;
     
     self.extraRightButton.backgroundColor = self.tabBarColor;
-    [self.extraRightButton addTarget:self action:@selector(extraRightButtonDidPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.extraRightButton addTarget:self action:@selector(extraRightButtonDidPress) forControlEvents:UIControlEventTouchUpInside];
     self.extraRightButton.hidden = YES;
 
     [self addSubview:self.extraRightButton];
@@ -458,15 +458,15 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     }
 }
 
-- (void)extraLeftButtonDidPressed {
-    if ([self.delegate respondsToSelector:@selector(extraLeftItemDidPressedInTabBarView:)]) {
-        [self.delegate extraLeftItemDidPressedInTabBarView:self];
+- (void)extraLeftButtonDidPress {
+    if ([self.delegate respondsToSelector:@selector(extraLeftItemDidPressInTabBarView:)]) {
+        [self.delegate extraLeftItemDidPressInTabBarView:self];
     }
 }
 
-- (void)extraRightButtonDidPressed {
-    if ([self.delegate respondsToSelector:@selector(extraRightItemDidPressedInTabBarView:)]) {
-        [self.delegate extraRightItemDidPressedInTabBarView:self];
+- (void)extraRightButtonDidPress {
+    if ([self.delegate respondsToSelector:@selector(extraRightItemDidPressInTabBarView:)]) {
+        [self.delegate extraRightItemDidPressInTabBarView:self];
     }
 }
 
@@ -493,8 +493,8 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
         [self showSelectedDotView];
     } andCompletion:^{
         if (counterCurrentValue == self.counter) {
-            if ([self.delegate respondsToSelector:@selector(tabBarViewDidExpanded:)]) {
-                [self.delegate tabBarViewDidExpanded:self];
+            if ([self.delegate respondsToSelector:@selector(tabBarViewDidExpand:)]) {
+                [self.delegate tabBarViewDidExpand:self];
             }
             self.isAnimated = NO;
         }
@@ -522,8 +522,8 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
         [self animateAdditionalButtons];
     } andCompletion:^{
         if (counterCurrentValue == self.counter) {
-            if ([self.delegate respondsToSelector:@selector(tabBarViewDidCollapsed:)]) {
-                [self.delegate tabBarViewDidCollapsed:self];
+            if ([self.delegate respondsToSelector:@selector(tabBarViewDidCollapse:)]) {
+                [self.delegate tabBarViewDidCollapse:self];
             }
         }
         self.isAnimated = NO;
