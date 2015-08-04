@@ -12,13 +12,13 @@ Also, read how it was done in our [blog](http://yalantis.com/blog/how_we_created
 
 
 ## Requirements
-iOS 8.0
+iOS 7.0
 
 ## Installation
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
-pod 'FoldingTabBar', '~> 1.0.0'
+pod 'FoldingTabBar', '~> 1.0.1'
 ```
 
 ####Manual Installation
