@@ -326,7 +326,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
         UIView *dotView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, YALBottomSelectedDotDefaultSize,YALBottomSelectedDotDefaultSize)];
         dotView.center = CGPointMake(button.center.x, button.center.y + YALBottomSelectedDotOffset);
         dotView.layer.cornerRadius = CGRectGetHeight(dotView.frame) / 2.f;
-        dotView.backgroundColor = [UIColor blackColor];
+        dotView.backgroundColor = self.dotColor ? self.dotColor : [UIColor blackColor];
         dotView.hidden = YES;
         [self.mainView addSubview:dotView];
         [self.allAdditionalButtonsBottomView addObject:dotView];
