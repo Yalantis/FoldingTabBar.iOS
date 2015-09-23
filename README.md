@@ -2,11 +2,11 @@
 
 Folding Tab Bar and Tab Bar Controller
 
-Made in [![Yalantis](https://raw.githubusercontent.com/Yalantis/FoldingTabBar.iOS/master/Example/Example/Resources/Images/badge_orage_shadow.png)](http://yalantis.com/?utm_source=github)
+Made in [![Yalantis](https://raw.githubusercontent.com/Yalantis/FoldingTabBar.iOS/master/Example/Example/Resources/Images/badge_orage_shadow.png)](https://yalantis.com/?utm_source=github)
 
 Inspired by [this project on Dribbble](https://dribbble.com/shots/2003376-Tab-Bar-Animation)
 
-Also, read how it was done in our [blog](http://yalantis.com/blog/how_we_created_tab_bar_animation_for_ios/?utm_source=github)
+Also, read how it was done in our [blog](https://yalantis.com/blog/how_we_created_tab_bar_animation_for_ios/?utm_source=github)
 
 ![Preview](https://d13yacurqjgara.cloudfront.net/users/495792/screenshots/2003376/tab_bar_animation_fin-02.gif)
 
