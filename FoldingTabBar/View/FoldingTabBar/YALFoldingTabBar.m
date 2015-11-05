@@ -621,6 +621,13 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 
 #pragma mark - Mutators
 
+- (void)setTabBarColor:(UIColor *)tabBarColor {
+    _tabBarColor = tabBarColor;
+    self.mainView.backgroundColor = self.tabBarColor;
+    self.extraLeftButton.backgroundColor = self.tabBarColor;
+    self.extraRightButton.backgroundColor = self.tabBarColor;
+}
+
 - (void)setCollapsedFrame:(CGRect)collapsedFrame {
     _collapsedFrame = collapsedFrame;
     
