@@ -18,7 +18,7 @@ iOS 7.0
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
-pod 'FoldingTabBar', '~> 1.0.1'
+pod 'FoldingTabBar', '~> 1.0.2'
 ```
 
 ####Manual Installation
@@ -120,6 +120,7 @@ tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
 ```objective-c
     tabBarController.tabBarView.backgroundColor = [UIColor colorWithRed:94.0/255.0 green:91.0/255.0 blue:149.0/255.0 alpha:1];
     tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:72.0/255.0 green:211.0/255.0 blue:178.0/255.0 alpha:1];
+    tabBarController.tabBarView.dotColor = [UIColor colorWithRed:94.0/255.0 green:91.0/255.0 blue:149.0/255.0 alpha:1];
 ```  
 4) Specify height for additional left and right buttons
 ```objective-c
