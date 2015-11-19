@@ -170,7 +170,14 @@
 }
 
 - (void)itemInTabBarViewPressed:(YALFoldingTabBar *)tabBarView atIndex:(NSUInteger)index {
-    self.selectedViewController = [self.viewControllers objectAtIndex:index];
+    BOOL should = YES;
+    if ([self.delegate respondsToSelector:@selector(tabBarController:shouldSelectViewController:)]) {
+        should = [self.delegate tabBarController:self shouldSelectViewController:[self.viewControllers objectAtIndex:index]];
+    }
+    if (should) {
+        self.selectedViewController = [self.viewControllers objectAtIndex:index];
+    }
+
 }
 
 
