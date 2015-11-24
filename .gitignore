@@ -17,7 +17,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-*.xcodeproj/**
 !*.xcodeproj/*.pbxproj
 !*.xcodeproj/xcshareddata
 
