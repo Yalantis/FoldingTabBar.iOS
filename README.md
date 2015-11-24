@@ -1,4 +1,4 @@
-# FoldingTabBar.iOS
+# FoldingTabBar.iOS [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Folding Tab Bar and Tab Bar Controller
 
@@ -15,6 +15,11 @@ Also, read how it was done in our [blog](https://yalantis.com/blog/how_we_create
 iOS 7.0
 
 ## Installation
+
+####[Carthage](https://github.com/Carthage/Carthage)
+```
+github "Yalantis/FoldingTabBar.iOS"
+```
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
