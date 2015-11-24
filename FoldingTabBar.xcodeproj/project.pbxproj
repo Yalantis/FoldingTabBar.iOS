@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C59E27571C04708A00E3BFBF /* FoldingTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */; };
 		C59E27931C04719600E3BFBF /* YALSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27731C04719600E3BFBF /* YALSpringAnimation.h */; };
 		C59E27941C04719600E3BFBF /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E27741C04719600E3BFBF /* YALSpringAnimation.m */; };
 		C59E27951C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27781C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h */; };
@@ -27,19 +26,8 @@
 		C59E27A31C04719600E3BFBF /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E27921C04719600E3BFBF /* YALFoldingTabBar.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C59E27581C04708A00E3BFBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C59E27431C04708A00E3BFBF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C59E274B1C04708A00E3BFBF;
-			remoteInfo = FoldingTabBar;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoldingTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C59E27561C04708A00E3BFBF /* FoldingTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoldingTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59E27731C04719600E3BFBF /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
 		C59E27741C04719600E3BFBF /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
 		C59E27781C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
@@ -67,14 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59E27531C04708A00E3BFBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C59E27571C04708A00E3BFBF /* FoldingTabBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */,
-				C59E27561C04708A00E3BFBF /* FoldingTabBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,24 +274,6 @@
 			productReference = C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C59E27551C04708A00E3BFBF /* FoldingTabBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C59E27631C04708A00E3BFBF /* Build configuration list for PBXNativeTarget "FoldingTabBarTests" */;
-			buildPhases = (
-				C59E27521C04708A00E3BFBF /* Sources */,
-				C59E27531C04708A00E3BFBF /* Frameworks */,
-				C59E27541C04708A00E3BFBF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C59E27591C04708A00E3BFBF /* PBXTargetDependency */,
-			);
-			name = FoldingTabBarTests;
-			productName = FoldingTabBarTests;
-			productReference = C59E27561C04708A00E3BFBF /* FoldingTabBarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -323,9 +284,6 @@
 				ORGANIZATIONNAME = "Sergey Butenko";
 				TargetAttributes = {
 					C59E274B1C04708A00E3BFBF = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-					C59E27551C04708A00E3BFBF = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -343,7 +301,6 @@
 			projectRoot = "";
 			targets = (
 				C59E274B1C04708A00E3BFBF /* FoldingTabBar */,
-				C59E27551C04708A00E3BFBF /* FoldingTabBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,13 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59E27A11C04719600E3BFBF /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C59E27541C04708A00E3BFBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,22 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59E27521C04708A00E3BFBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C59E27591C04708A00E3BFBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C59E274B1C04708A00E3BFBF /* FoldingTabBar */;
-			targetProxy = C59E27581C04708A00E3BFBF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C59E275E1C04708A00E3BFBF /* Debug */ = {
@@ -436,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,26 +456,6 @@
 			};
 			name = Release;
 		};
-		C59E27641C04708A00E3BFBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FoldingTabBar/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Yalantis.FoldingTabBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C59E27651C04708A00E3BFBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FoldingTabBar/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Yalantis.FoldingTabBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,15 +473,6 @@
 			buildConfigurations = (
 				C59E27611C04708A00E3BFBF /* Debug */,
 				C59E27621C04708A00E3BFBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C59E27631C04708A00E3BFBF /* Build configuration list for PBXNativeTarget "FoldingTabBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C59E27641C04708A00E3BFBF /* Debug */,
-				C59E27651C04708A00E3BFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
