@@ -1,6 +1,8 @@
-# Xcode
-#
+## Build generated
 build/
+DerivedData
+
+## Various settings
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -10,21 +12,14 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+
+## Other
 *.xccheckout
 *.moved-aside
-DerivedData
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspacedata
+
+## Obj-C/Swift specific
 *.hmap
 *.ipa
-*.xcuserstate
-
-!*.xcodeproj/*.pbxproj
-!*.xcodeproj/xcshareddata
-
-*.xcworkspace/**
-!*.xcworkspace/*.xcworkspacedata
-
-Pods
-Podfile.lock
-.idea
-
-pkg/*
