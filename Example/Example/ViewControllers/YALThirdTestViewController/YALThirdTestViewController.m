@@ -76,31 +76,32 @@ NSString *const YALChatDemeDateText = @"dateText";
     }
 }
 
-- (void)tabBarViewWillExpand {
+
+- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidCollapsed {
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidExpanded {
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraLeftItemDidPressed {
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraRightItemDidPressed {
+- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }

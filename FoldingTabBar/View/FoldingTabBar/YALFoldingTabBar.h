@@ -20,14 +20,14 @@
 
 - (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index;
 
-- (void)tabBarWillCollapse:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarWillCollapse:(YALFoldingTabBar *)tabBar;
+- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBar;
 
-- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBar;
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBar;
 
-- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBar;
+- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBar;
 
 @end
 
