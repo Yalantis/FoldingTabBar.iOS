@@ -20,6 +20,7 @@
 		3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44351AC5667500AE33CD /* YALChatDemoList.plist */; };
 		3EDA44491AC5667500AE33CD /* YALThirdTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */; };
 		3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */; };
+		5B6430981C11E0E0005E8851 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */; };
 		C92CAA6C1ACE8B7000F5645A /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */; };
 		C92CAA6D1ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */; };
 		C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
@@ -27,7 +28,6 @@
 		C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */; };
 		C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */; };
 		C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */; };
-		C9D10C9A1B0F324D002CBCA2 /* badge_orage_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +52,8 @@
 		3EDA44361AC5667500AE33CD /* YALThirdTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALThirdTestViewController.h; sourceTree = "<group>"; };
 		3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALThirdTestViewController.m; sourceTree = "<group>"; };
 		3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		5B6430961C11E0E0005E8851 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
 		C92CAA4F1ACE8B7000F5645A /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
 		C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
 		C92CAA541ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
@@ -64,10 +66,8 @@
 		C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
 		C92CAA631ACE8B7000F5645A /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
 		C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
-		C92CAA671ACE8B7000F5645A /* YALTabBarInteracting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarInteracting.h; sourceTree = "<group>"; };
 		C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
 		C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
-		C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badge_orage_shadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,6 @@
 		3EDA44201AC5667500AE33CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C9D10C981B0F324D002CBCA2 /* Images */,
 				3EDA44211AC5667500AE33CD /* Font */,
 			);
 			path = Resources;
@@ -228,6 +227,15 @@
 				3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */,
 			);
 			path = LaunchXib;
+			sourceTree = "<group>";
+		};
+		5B6430951C11E0E0005E8851 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5B6430961C11E0E0005E8851 /* YALCustomHeightTabBar.h */,
+				5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
 			sourceTree = "<group>";
 		};
 		C92CAA4C1ACE8B7000F5645A /* FoldingTabBar */ = {
@@ -351,22 +359,14 @@
 		C92CAA651ACE8B7000F5645A /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA661ACE8B7000F5645A /* TabBarInteracting */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		C92CAA661ACE8B7000F5645A /* TabBarInteracting */ = {
-			isa = PBXGroup;
-			children = (
-				C92CAA671ACE8B7000F5645A /* YALTabBarInteracting.h */,
-			);
-			path = TabBarInteracting;
 			sourceTree = "<group>";
 		};
 		C92CAA681ACE8B7000F5645A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B6430951C11E0E0005E8851 /* CustomHeightTabBar */,
 				C92CAA691ACE8B7000F5645A /* FoldingTabBar */,
 			);
 			path = View;
@@ -379,14 +379,6 @@
 				C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */,
 			);
 			path = FoldingTabBar;
-			sourceTree = "<group>";
-		};
-		C9D10C981B0F324D002CBCA2 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				C9D10C991B0F324D002CBCA2 /* badge_orage_shadow.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +407,7 @@
 		3E4B87B01A94E87A00419B25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Yalantis;
 				TargetAttributes = {
 					3E4B87B71A94E87A00419B25 = {
@@ -451,7 +443,6 @@
 				3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */,
 				3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */,
 				3EDA44421AC5667500AE33CD /* Proxima Nova Regular.otf in Resources */,
-				C9D10C9A1B0F324D002CBCA2 /* badge_orage_shadow.png in Resources */,
 				3EDA443D1AC5667500AE33CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +465,7 @@
 				C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */,
 				C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				3EDA44461AC5667500AE33CD /* YALFourthTestViewController.m in Sources */,
+				5B6430981C11E0E0005E8851 /* YALCustomHeightTabBar.m in Sources */,
 				3EDA443B1AC5667500AE33CD /* AppDelegate.m in Sources */,
 				3EDA44471AC5667500AE33CD /* YALSecondTestViewController.m in Sources */,
 				C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */,
@@ -503,6 +495,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -517,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -552,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -563,10 +556,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yalantis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Example;
 			};
 			name = Debug;
@@ -575,10 +568,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Yalantis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Example;
 			};
 			name = Release;

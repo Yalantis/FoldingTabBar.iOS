@@ -25,7 +25,7 @@ NSString *const YALChatDemeDateText = @"dateText";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     self.chatDemoData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YALChatDemoList" ofType:@"plist"]];
 }
 
@@ -82,25 +82,25 @@ NSString *const YALChatDemeDateText = @"dateText";
     }
 }
 
-- (void)tabBarViewDidCollapse {
+- (void)tabBarViewDidCollapsed {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidExpand {
+- (void)tabBarViewDidExpanded {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraLeftItemDidPress {
+- (void)extraLeftItemDidPressed {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraRightItemDidPress {
+- (void)extraRightItemDidPressed {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
@@ -145,6 +145,15 @@ NSString *const YALChatDemeDateText = @"dateText";
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)collectionViewLayout;
     
     return CGSizeMake(CGRectGetWidth(self.view.bounds), layout.itemSize.height);
+}
+
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    
+    [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
 }
 
 @end

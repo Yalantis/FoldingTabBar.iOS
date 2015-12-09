@@ -2,8 +2,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YALTabBarInteracting.h"
+#import "YALFoldingTabBar.h"
 
-@interface YALFirstTestViewController : UIViewController <YALTabBarInteracting>
+@interface YALFirstTestViewController : UIViewController <YALTabBarDelegate>
 
 @end

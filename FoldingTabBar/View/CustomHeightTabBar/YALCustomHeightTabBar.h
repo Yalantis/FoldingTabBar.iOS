@@ -2,8 +2,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YALFoldingTabBar.h"
+@interface YALCustomHeightTabBar : UITabBar
 
-@interface YALThirdTestViewController : UIViewController <YALTabBarDelegate>
+@property (nonatomic) CGFloat barHeight;
 
 @end

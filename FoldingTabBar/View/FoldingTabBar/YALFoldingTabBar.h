@@ -3,8 +3,9 @@
 #import <UIKit/UIKit.h>
 
 @class YALFoldingTabBar;
+@class YALFoldingTabBarController;
 
-@protocol YALTabBarViewDataSource <NSObject>
+@protocol YALTabBarDataSource <NSObject>
 
 @required
 - (NSArray *)leftTabBarItemsInTabBarView:(YALFoldingTabBar *)tabBarView;
@@ -13,19 +14,20 @@
 
 @end
 
-@protocol YALTabBarViewDelegate <NSObject>
+@protocol YALTabBarDelegate <NSObject>
 
 @optional
-- (void)itemInTabBarViewPressed:(YALFoldingTabBar *)tabBarView atIndex:(NSUInteger)index;
 
-- (void)tabBarViewWillCollapse:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarViewWillExpand:(YALFoldingTabBar *)tabBarView;
+- (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index;
 
-- (void)tabBarViewDidCollapse:(YALFoldingTabBar *)tabBarView;
-- (void)tabBarViewDidExpand:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarWillCollapse:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBarView;
 
-- (void)extraLeftItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView;
-- (void)extraRightItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBarView;
+
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBarView;
+- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBarView;
 
 @end
 
@@ -36,16 +38,12 @@ typedef NS_ENUM(NSUInteger, YALTabBarState) {
 
 @interface YALFoldingTabBar : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame state:(YALTabBarState)state;
-
-@property (nonatomic, weak) IBOutlet id<YALTabBarViewDataSource> dataSource;
-@property (nonatomic, weak) IBOutlet id<YALTabBarViewDelegate> delegate;
+- (instancetype)initWithController:(YALFoldingTabBarController *)controller;
 
 @property (nonatomic, assign, readonly) YALTabBarState state;
 @property (nonatomic, assign) NSUInteger selectedTabBarItemIndex;
 
 @property (nonatomic, copy) UIColor *tabBarColor;
-@property (nonatomic, copy) UIColor *dotColor;
 @property (nonatomic, assign) UIEdgeInsets tabBarViewEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets tabBarItemsEdgeInsets;
 @property (nonatomic, assign) CGFloat extraTabBarItemHeight;

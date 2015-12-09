@@ -6,11 +6,11 @@
 #import "YALTabBarItem.h"
 
 //protocol
-#import "YALTabBarInteracting.h"
-
+#import "YALFoldingTabBar.h"
 #import "YALAnimatingTabBarConstants.h"
 
-@interface YALFoldingTabBarController () <YALTabBarViewDataSource, YALTabBarViewDelegate>
+
+@interface YALFoldingTabBarController () <YALTabBarDelegate, YALTabBarDataSource>
 
 @property (nonatomic, assign) YALTabBarState state;
 
@@ -23,7 +23,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [self setup];
+        [self setupTabBarView];
     }
     return self;
 }
@@ -31,7 +31,7 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self setup];
+        [self setupTabBarView];
     }
     return self;
 }
@@ -39,15 +39,9 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self setup];
+        [self setupTabBarView];
     }
     return self;
-}
-
-- (void)setup {
-    self.tabBarViewHeight = YALTabBarViewDefaultHeight;
-    
-    [self setupTabBarView];
 }
 
 #pragma mark - View & LifeCycle
@@ -57,23 +51,17 @@
     
     [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
     [self.tabBar setShadowImage:[[UIImage alloc] init]];
-    
-    self.tabBar.hidden = YES;
-}
-
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    
-    CGRect tabFrame = self.tabBar.frame;
-    tabFrame.size.height = self.tabBarViewHeight;
-    tabFrame.origin.y = self.view.frame.size.height - self.tabBarViewHeight;
-    self.tabBar.frame = tabFrame;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    [self updateTabBarViewFrame];
+    self.tabBarView.frame = self.tabBar.bounds;
+    
+    for (UIView *view in self.tabBar.subviews) {
+        [view removeFromSuperview];
+    }
+    [self.tabBar addSubview:self.tabBarView];
 }
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex {
@@ -85,29 +73,20 @@
 
 #pragma mark - Private
 
-- (void)updateTabBarViewFrame {
-    CGFloat tabBarViewOriginX = self.tabBar.frame.origin.x;
-    CGFloat tabBarViewOriginY = self.tabBar.frame.origin.y;
-    CGFloat tabBarViewSizeWidth = CGRectGetWidth(self.tabBar.frame);
-    
-    self.tabBarView.frame = CGRectMake(tabBarViewOriginX, tabBarViewOriginY, tabBarViewSizeWidth, self.tabBarViewHeight);
-    [self.tabBarView setNeedsLayout];
-}
-
 - (void)setupTabBarView {
-    self.tabBarView = [[YALFoldingTabBar alloc] initWithFrame:CGRectZero state:self.state];
-        
-    self.tabBarView.dataSource = self;
-    self.tabBarView.delegate = self;
+    for (UIView *view in self.tabBar.subviews) {
+        [view removeFromSuperview];
+    }
     
-    [self.view addSubview:self.tabBarView];
+    self.tabBarView = [[YALFoldingTabBar alloc] initWithController:self];
+    [self.tabBar addSubview:self.tabBarView];
 }
 
-- (id<YALTabBarInteracting>)currentInteractingViewController {
+- (id<YALTabBarDelegate>)currentInteractingViewController {
     if ([self.selectedViewController isKindOfClass:[UINavigationController class]]) {
-        return (id<YALTabBarInteracting>)[(UINavigationController *)self.selectedViewController topViewController];
+        return (id<YALTabBarDelegate>)[(UINavigationController *)self.selectedViewController topViewController];
     } else {
-        return (id<YALTabBarInteracting>)self.selectedViewController;
+        return (id<YALTabBarDelegate>)self.selectedViewController;
     }
 }
 
@@ -127,58 +106,52 @@
 
 #pragma mark - YALTabBarViewDelegate
 
-- (void)tabBarViewWillCollapse:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewWillCollapse)]) {
-        [viewController tabBarViewWillCollapse];
+- (void)tabBarWillCollapse:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarWillCollapse:)]) {
+        [viewController tabBarWillCollapse:self.tabBarView];
     }
 }
 
-- (void)tabBarViewDidCollapse:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewDidCollapse)]) {
-        [viewController tabBarViewDidCollapse];
+-(void)tabBarDidCollapse:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarDidCollapse:)]) {
+        [viewController tabBarDidCollapse:self.tabBarView];
     }
 }
 
-- (void)tabBarViewWillExpand:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewWillExpand)]) {
-        [viewController tabBarViewWillExpand];
+-(void)tabBarWillExpand:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarWillExpand:)]) {
+        [viewController tabBarWillExpand:self.tabBarView];
     }
 }
 
-- (void)tabBarViewDidExpand:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(tabBarViewDidExpand)]) {
-        [viewController tabBarViewDidExpand];
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarDidExpand:)]) {
+        [viewController tabBarDidExpand:self.tabBarView];
     }
 }
 
-- (void)extraLeftItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(extraLeftItemDidPress)]) {
-        [viewController extraLeftItemDidPress];
+//TODO: fix
+
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarDidSelectExtraLeftItem:)]) {
+        [viewController tabBarDidSelectExtraLeftItem:self.tabBarView];
     }
 }
 
-- (void)extraRightItemDidPressInTabBarView:(YALFoldingTabBar *)tabBarView {
-    id<YALTabBarInteracting>viewController = [self currentInteractingViewController];
-    if ([viewController respondsToSelector:@selector(extraRightItemDidPress)]) {
-        [viewController extraRightItemDidPress];
+- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBarView {
+    id<YALTabBarDelegate>viewController = [self currentInteractingViewController];
+    if ([viewController respondsToSelector:@selector(tabBarDidSelectExtraRightItem:)]) {
+        [viewController tabBarDidSelectExtraRightItem:self.tabBarView];
     }
 }
 
-- (void)itemInTabBarViewPressed:(YALFoldingTabBar *)tabBarView atIndex:(NSUInteger)index {
-    BOOL should = YES;
-    if ([self.delegate respondsToSelector:@selector(tabBarController:shouldSelectViewController:)]) {
-        should = [self.delegate tabBarController:self shouldSelectViewController:[self.viewControllers objectAtIndex:index]];
-    }
-    if (should) {
-        self.selectedViewController = [self.viewControllers objectAtIndex:index];
-    }
-
+- (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {
+    self.selectedViewController = [self.viewControllers objectAtIndex:index];
 }
-
 
 @end
