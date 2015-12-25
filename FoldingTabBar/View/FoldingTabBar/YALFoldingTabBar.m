@@ -134,9 +134,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     
     self.centerButton.layer.cornerRadius = CGRectGetHeight(self.mainView.bounds) / 2.f;
     
-    if ([self.dataSource respondsToSelector:@selector(centerImageInTabBarView:)]) {
-        [self.centerButton setImage:[self.dataSource centerImageInTabBarView:self] forState:UIControlStateNormal];
-    }
+    [self.centerButton setImage:[self.dataSource centerImageInTabBarView:self] forState:UIControlStateNormal];
     
     [self.centerButton addTarget:self action:@selector(centerButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.centerButton.adjustsImageWhenHighlighted = NO;
@@ -456,27 +454,19 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     
     self.selectedTabBarItemIndex = index;
     
-    if ([self.delegate respondsToSelector:@selector(tabBarWillCollapse:)]) {
-        [self.delegate tabBarWillCollapse:self];
-    }
+    [self.delegate tabBarWillCollapse:self];
 
     [self collapse];
     
-    if ([self.delegate respondsToSelector:@selector(tabBar:didSelectItemAtIndex:)]) {
-        [self.delegate tabBar:self didSelectItemAtIndex:index];
-    }
+    [self.delegate tabBar:self didSelectItemAtIndex:index];
 }
 
 - (void)didPressExtraLeftButton:(id)sender {
-    if ([self.delegate respondsToSelector:@selector(tabBarDidSelectExtraLeftItem:)]) {
-        [self.delegate tabBarDidSelectExtraLeftItem:self];
-    }
+    [self.delegate tabBarDidSelectExtraLeftItem:self];
 }
 
 - (void)didPressExtraRightButton:(id)sender {
-    if ([self.delegate respondsToSelector:@selector(tabBarDidSelectExtraRightItem:)]) {
-        [self.delegate tabBarDidSelectExtraRightItem:self];
-    }
+    [self.delegate tabBarDidSelectExtraRightItem:self];
 }
 
 #pragma mark - expand/collapse
@@ -486,9 +476,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     self.animatingState = YALAnimatingStateExpanding;
     self.state = YALStateExpanded;
     
-    if ([self.delegate respondsToSelector:@selector(tabBarWillExpand:)]) {
-        [self.delegate tabBarWillExpand:self];
-    }
+    [self.delegate tabBarWillExpand:self];
     
     __block NSUInteger counterCurrentValue = self.counter;
     
@@ -502,9 +490,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
         [self showSelectedDotView];
     } andCompletion:^{
         if (counterCurrentValue == self.counter) {
-            if ([self.delegate respondsToSelector:@selector(tabBarDidExpand:)]) {
-                [self.delegate tabBarDidExpand:self];
-            }
+            [self.delegate tabBarDidExpand:self];
             [self setAnimating:NO];
         }
     }];
@@ -515,9 +501,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     self.animatingState = YALAnimatingStateCollapsing;
     self.state = YALStateCollapsed;
     
-    if ([self.delegate respondsToSelector:@selector(tabBarWillCollapse:)]) {
-        [self.delegate tabBarWillCollapse:self];
-    }
+    [self.delegate tabBarWillCollapse:self];
     
     __block NSUInteger counterCurrentValue = self.counter;
     
@@ -531,9 +515,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
         [self animateAdditionalButtons];
     } andCompletion:^{
         if (counterCurrentValue == self.counter) {
-            if ([self.delegate respondsToSelector:@selector(tabBarDidCollapse:)]) {
-                [self.delegate tabBarDidCollapse:self];
-            }
+            [self.delegate tabBarDidCollapse:self];
         }
         [self setAnimating:NO];
     }];
