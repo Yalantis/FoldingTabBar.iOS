@@ -5,7 +5,6 @@
 //model
 #import "YALTabBarItem.h"
 
-//protocol
 #import "YALFoldingTabBar.h"
 #import "YALAnimatingTabBarConstants.h"
 
