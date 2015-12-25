@@ -16,8 +16,6 @@
 
 @protocol YALTabBarDelegate <NSObject>
 
-@required
-
 - (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index;
 - (BOOL)tabBar:(YALFoldingTabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
 
