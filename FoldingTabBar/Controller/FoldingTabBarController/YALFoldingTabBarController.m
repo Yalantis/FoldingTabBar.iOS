@@ -70,6 +70,16 @@
     [self.tabBarView setNeedsLayout];
 }
 
+- (void)setTabBarViewHeight:(CGFloat)tabBarViewHeight {
+    CGRect newFrame = self.tabBar.frame;
+    newFrame.size.height = tabBarViewHeight;
+    [self.tabBar setFrame:newFrame];
+}
+
+- (CGFloat)tabBarViewHeight {
+    return self.tabBar.frame.size.height;
+}
+
 #pragma mark - Private
 
 - (void)setupTabBarView {
