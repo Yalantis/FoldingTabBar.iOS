@@ -44,6 +44,7 @@ typedef NS_ENUM(NSUInteger, YALTabBarState) {
 @property (nonatomic, assign) NSUInteger selectedTabBarItemIndex;
 
 @property (nonatomic, copy) UIColor *tabBarColor;
+@property (nonatomic, copy) UIColor *dotColor;
 @property (nonatomic, assign) UIEdgeInsets tabBarViewEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets tabBarItemsEdgeInsets;
 @property (nonatomic, assign) CGFloat extraTabBarItemHeight;
