@@ -26,7 +26,7 @@
 
 - (void)setupYALTabBarController {
     YALFoldingTabBarController *tabBarController = (YALFoldingTabBarController *) self.window.rootViewController;
-
+    
     //prepare leftBarItems
     YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"nearby_icon"]
                                                       leftItemImage:nil

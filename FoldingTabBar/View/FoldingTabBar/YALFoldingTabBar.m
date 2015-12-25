@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 @property (nonatomic, strong) UIButton *centerButton;
 @property (nonatomic, strong) UIView *mainView;
 
-@property (nonatomic, assign) BOOL isAnimated;
+@property (nonatomic, assign, getter = isAnimating) BOOL animating;
 
 @property (nonatomic, assign) CGRect collapsedFrame;
 @property (nonatomic, assign) CGRect expandedFrame;
@@ -423,7 +423,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     
     self.counter ++;
     
-    if (!self.isAnimated) {
+    if (![self isAnimating]) {
         if (self.state == YALStateCollapsed) {
             [self expand];
         } else {
@@ -439,12 +439,12 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 }
 
 - (void)didTapBarItem:(id)sender {
-    if (self.isAnimated) {
-        return;
-    }
-    
     NSUInteger index = [self.allAdditionalButtons indexOfObject:sender];
     
+    if (![self.delegate tabBar:self shouldSelectItemAtIndex:index] || [self isAnimating]) {
+        return;
+    }
+        
     if (self.selectedTabBarItemIndex != index) {
         YALTabBarItem *item = [self.allBarItems objectAtIndex:index];
         [self configureExtraTabBarItemWithModel:item];
@@ -493,7 +493,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     __block NSUInteger counterCurrentValue = self.counter;
     
     [CATransaction transactionWithAnimations:^{
-        self.isAnimated = YES;
+        [self setAnimating:YES];
         [self animateTabBarViewExpand];
         [self hideExtraLeftTabBarItem];
         [self hideExtraRightTabBarItem];
@@ -505,7 +505,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
             if ([self.delegate respondsToSelector:@selector(tabBarDidExpand:)]) {
                 [self.delegate tabBarDidExpand:self];
             }
-            self.isAnimated = NO;
+            [self setAnimating:NO];
         }
     }];
 }
@@ -522,7 +522,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     __block NSUInteger counterCurrentValue = self.counter;
     
     [CATransaction transactionWithAnimations:^{
-        self.isAnimated = YES;
+        [self setAnimating:YES];
         [self animateTabBarViewCollapse];
         [self showExtraLeftTabBarItem];
         [self showExtraRightTabBarItem];
@@ -535,7 +535,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
                 [self.delegate tabBarDidCollapse:self];
             }
         }
-        self.isAnimated = NO;
+        [self setAnimating:NO];
     }];
 }
 

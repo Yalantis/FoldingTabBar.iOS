@@ -159,8 +159,22 @@
     }
 }
 
+- (BOOL)tabBar:(YALFoldingTabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index {
+    UIViewController *viewControllerToSelect = self.viewControllers[index];
+
+    BOOL shouldAskForPermission = [self.delegate respondsToSelector:@selector(tabBarController:shouldSelectViewController:)];
+    
+    BOOL selectionAllowed = YES;
+    
+    if (shouldAskForPermission) {
+        selectionAllowed = [self.delegate tabBarController:self shouldSelectViewController:viewControllerToSelect];
+    }
+    
+    return selectionAllowed;
+}
+
 - (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {
-    self.selectedViewController = [self.viewControllers objectAtIndex:index];
+    self.selectedViewController = self.viewControllers[index];
 }
 
 @end
