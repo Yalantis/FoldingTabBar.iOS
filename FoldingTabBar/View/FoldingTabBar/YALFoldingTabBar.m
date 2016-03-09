@@ -673,4 +673,11 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     });
 }
 
+// will "activate" touches behind tabBar or better between tabBarItems
+-(id)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    id hitView = [super hitTest:point withEvent:event];
+    if (hitView == self.mainView) return nil;
+    else return hitView;
+}
+
 @end
