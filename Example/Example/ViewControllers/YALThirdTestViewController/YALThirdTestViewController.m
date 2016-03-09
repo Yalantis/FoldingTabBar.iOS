@@ -25,7 +25,7 @@ NSString *const YALChatDemeDateText = @"dateText";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     self.chatDemoData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YALChatDemoList" ofType:@"plist"]];
 }
 
@@ -76,31 +76,32 @@ NSString *const YALChatDemeDateText = @"dateText";
     }
 }
 
-- (void)tabBarViewWillExpand {
+
+- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidCollapse {
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidExpand {
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraLeftItemDidPress {
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraRightItemDidPress {
+- (void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
@@ -145,6 +146,15 @@ NSString *const YALChatDemeDateText = @"dateText";
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)collectionViewLayout;
     
     return CGSizeMake(CGRectGetWidth(self.view.bounds), layout.itemSize.height);
+}
+
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    
+    [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
 }
 
 @end

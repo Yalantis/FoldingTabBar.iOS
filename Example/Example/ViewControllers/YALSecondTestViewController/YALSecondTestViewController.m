@@ -8,37 +8,37 @@
 
 #pragma mark - YALTabBarInteracting
 
-- (void)tabBarViewWillCollapse {
+- (void)tabBarWillCollapse:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewWillExpand {
+- (void)tabBarWillExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidCollapse {
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidExpand {
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBar {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraLeftItemDidPress {
+- (void)tabBarDidSelectExtraLeftItem:(YALFoldingTabBar *)tabBarView {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)extraRightItemDidPress {
+-(void)tabBarDidSelectExtraRightItem:(YALFoldingTabBar *)tabBarView {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }

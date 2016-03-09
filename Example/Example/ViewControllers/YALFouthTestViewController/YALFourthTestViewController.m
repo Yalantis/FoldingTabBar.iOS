@@ -20,17 +20,16 @@
     }
 }
 
-- (void)tabBarViewDidCollapse {
+- (void)tabBarDidCollapse:(YALFoldingTabBar *)tabBarView {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
 
-- (void)tabBarViewDidExpand {
+- (void)tabBarDidExpand:(YALFoldingTabBar *)tabBarView {
     if (debug == 1) {
         NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));
     }
 }
-
 
 @end
