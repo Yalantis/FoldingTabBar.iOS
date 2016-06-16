@@ -23,7 +23,7 @@ github "Yalantis/FoldingTabBar.iOS"
 
 ####[CocoaPods](http://cocoapods.org)
 ```ruby
-pod 'FoldingTabBar', '~> 1.0.2'
+pod 'FoldingTabBar', '~> 1.0.3'
 ```
 
 ####Manual Installation
