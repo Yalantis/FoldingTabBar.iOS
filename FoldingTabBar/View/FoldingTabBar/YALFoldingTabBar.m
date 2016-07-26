@@ -566,6 +566,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 
 - (void)animateTabBarViewExpand {
     CAAnimation *animation = [CAAnimation animationForTabBarExpandFromRect:self.collapsedBounds toRect:self.expandedBounds];
+    animation.delegate = self;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [self.mainView.layer.mask addAnimation:animation forKey:nil];
 }
@@ -573,6 +574,7 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 - (void)animateTabBarViewCollapse {
     CAAnimation *animation = [CAAnimation animationForTabBarCollapseFromRect:self.expandedBounds toRect:self.collapsedBounds];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    animation.delegate = self;
     [self.mainView.layer.mask addAnimation:animation forKey:nil];
 }
 
@@ -678,6 +680,14 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     id hitView = [super hitTest:point withEvent:event];
     if (hitView == self.mainView) return nil;
     else return hitView;
+}
+
+// release CGPath after animation
+- (void)animationDidStop:(CAKeyframeAnimation *)animation finished:(BOOL)flag {
+    for (id pathValue in animation.values) {
+        CGPathRef pathRef = (__bridge CGPathRef)pathValue;
+        CGPathRelease(pathRef);
+    }
 }
 
 @end

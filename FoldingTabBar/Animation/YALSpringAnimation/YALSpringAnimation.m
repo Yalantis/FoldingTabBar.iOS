@@ -3,7 +3,7 @@
 #import "YALSpringAnimation.h"
 #import <UIKit/UIKit.h>
 
-static const NSUInteger kNumberOfPoints = 500;
+static const NSUInteger kNumberOfPoints = 50;
 static const double kDampingMutiplier = 10;
 static const double kVelocityMutiplier = 10;
 
