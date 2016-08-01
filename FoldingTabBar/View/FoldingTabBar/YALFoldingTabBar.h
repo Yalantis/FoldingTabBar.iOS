@@ -32,15 +32,15 @@
 @end
 
 typedef NS_ENUM(NSUInteger, YALTabBarState) {
-    YALStateCollapsed,
-    YALStateExpanded
+    YALTabBarStateCollapsed,
+    YALTabBarStateExpanded
 };
 
 @interface YALFoldingTabBar : UIView
 
 - (instancetype)initWithController:(YALFoldingTabBarController *)controller;
 
-@property (nonatomic, assign, readonly) YALTabBarState state;
+@property (nonatomic, assign) YALTabBarState state;
 @property (nonatomic, assign) NSUInteger selectedTabBarItemIndex;
 
 @property (nonatomic, copy) UIColor *tabBarColor;
