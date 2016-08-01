@@ -8,10 +8,7 @@
 #import "YALFoldingTabBar.h"
 #import "YALAnimatingTabBarConstants.h"
 
-
 @interface YALFoldingTabBarController () <YALTabBarDelegate, YALTabBarDataSource>
-
-@property (nonatomic, assign) YALTabBarState state;
 
 @end
 
