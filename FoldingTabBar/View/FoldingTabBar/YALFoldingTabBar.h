@@ -40,6 +40,16 @@ typedef NS_ENUM(NSUInteger, YALTabBarState) {
 
 - (instancetype)initWithController:(YALFoldingTabBarController *)controller;
 
+/**
+ *  Default data source is YALFoldingTabBarController.
+ */
+@property (nonatomic, weak) id<YALTabBarDataSource> dataSource;
+
+/**
+ *  Default delegate is YALFoldingTabBarController.
+ */
+@property (nonatomic, weak) id<YALTabBarDelegate> delegate;
+
 @property (nonatomic, assign) YALTabBarState state;
 @property (nonatomic, assign) NSUInteger selectedTabBarItemIndex;
 

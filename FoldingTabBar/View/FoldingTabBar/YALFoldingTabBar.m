@@ -51,9 +51,6 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 @property (nonatomic, strong) NSArray *allAdditionalButtons;
 @property (nonatomic, strong) NSMutableArray *allAdditionalButtonsBottomView;
 
-@property (nonatomic, weak) id<YALTabBarDataSource> dataSource;
-@property (nonatomic, weak) id<YALTabBarDelegate> delegate;
-
 @end
 
 @implementation YALFoldingTabBar
