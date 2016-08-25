@@ -330,6 +330,24 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     [self addSubview:self.extraRightButton];
 }
 
+- (void)changeExtraLeftTabBarItemWithImage:(UIImage *)image {
+    if (image) {
+        self.extraLeftButton.hidden = NO;
+        [self.extraLeftButton setImage:image forState:UIControlStateNormal];
+    } else {
+        self.extraLeftButton.hidden = YES;
+    }
+}
+
+- (void)changeExtraRightTabBarItemWithImage:(UIImage *)image {
+    if (image) {
+        self.extraRightButton.hidden = NO;
+        [self.extraRightButton setImage:image forState:UIControlStateNormal];
+    } else {
+        self.extraRightButton.hidden = YES;
+    }
+}
+
 - (void)setupTabBarItemsViewRepresentation {
     NSMutableArray *tempArray = [NSMutableArray array];
     NSMutableArray *reverseArray = [NSMutableArray arrayWithCapacity:[self.leftButtonsArray count]];
