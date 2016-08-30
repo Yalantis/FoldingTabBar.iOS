@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B230531D74512100A625DF /* EmptyViewController.swift */; };
+		C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B230551D7451E200A625DF /* YALChatDemoList.plist */; };
+		C5E3508E1D73FFEA0023E7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */; };
+		C5E350EB1D7400A80023E7F7 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */; };
+		C5E350EC1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		C5E350EE1D7400A80023E7F7 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */; };
+		C5E350EF1D7400A80023E7F7 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */; };
+		C5E350F01D7400A80023E7F7 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */; };
+		C5E350F11D7400A80023E7F7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5E350E31D7400A80023E7F7 /* Info.plist */; };
+		C5E350F21D7400A80023E7F7 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */; };
+		C5E350F31D7400A80023E7F7 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */; };
+		C5E350F61D7402B00023E7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E350F51D7402B00023E7F7 /* AppDelegate.swift */; };
+		C5E350F91D7402C20023E7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E350F81D7402C20023E7F7 /* Main.storyboard */; };
+		C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E350FA1D7404280023E7F7 /* Images.xcassets */; };
+		C5E351071D7404420023E7F7 /* Code Pro LC.otf in Resources */ = {isa = PBXBuildFile; fileRef = C5E350FE1D7404420023E7F7 /* Code Pro LC.otf */; };
+		C5E351081D7404420023E7F7 /* Proxima Nova Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C5E350FF1D7404420023E7F7 /* Proxima Nova Regular.otf */; };
+		C5E3510E1D741FC10023E7F7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E3510D1D741FC10023E7F7 /* ChatViewController.swift */; };
+		C5E351101D741FD80023E7F7 /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E3510F1D741FD80023E7F7 /* ChatCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5B230531D74512100A625DF /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		C5B230551D7451E200A625DF /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
+		C5E350801D73FFEA0023E7F7 /* Example-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E3508D1D73FFEA0023E7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5E3508F1D73FFEA0023E7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E350C41D74009B0023E7F7 /* Example-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5E350CB1D7400A80023E7F7 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		C5E350D01D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		C5E350D41D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		C5E350D71D7400A80023E7F7 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		C5E350DB1D7400A80023E7F7 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		C5E350DF1D7400A80023E7F7 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		C5E350E21D7400A80023E7F7 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		C5E350E31D7400A80023E7F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5E350E61D7400A80023E7F7 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		C5E350E91D7400A80023E7F7 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		C5E350F51D7402B00023E7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5E350F81D7402C20023E7F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C5E350FA1D7404280023E7F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5E350FE1D7404420023E7F7 /* Code Pro LC.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Code Pro LC.otf"; sourceTree = "<group>"; };
+		C5E350FF1D7404420023E7F7 /* Proxima Nova Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Regular.otf"; sourceTree = "<group>"; };
+		C5E3510D1D741FC10023E7F7 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		C5E3510F1D741FD80023E7F7 /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5E3507D1D73FFEA0023E7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5E350771D73FFEA0023E7F7 = {
+			isa = PBXGroup;
+			children = (
+				C5E350821D73FFEA0023E7F7 /* Example-Swift */,
+				C5E350811D73FFEA0023E7F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5E350811D73FFEA0023E7F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350801D73FFEA0023E7F7 /* Example-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5E350821D73FFEA0023E7F7 /* Example-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350C41D74009B0023E7F7 /* Example-Swift-Bridging-Header.h */,
+				C5E3508F1D73FFEA0023E7F7 /* Info.plist */,
+				C5B230551D7451E200A625DF /* YALChatDemoList.plist */,
+				C5E350FA1D7404280023E7F7 /* Images.xcassets */,
+				C5E350F41D7402B00023E7F7 /* AppDelegate */,
+				C5E350C81D7400A80023E7F7 /* FoldingTabBar */,
+				C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */,
+				C5E350FC1D7404420023E7F7 /* Resources */,
+				C5E350F71D7402C20023E7F7 /* Storyboard */,
+				C5E351001D7404420023E7F7 /* View */,
+				C5E351021D7404420023E7F7 /* ViewControllers */,
+			);
+			path = "Example-Swift";
+			sourceTree = "<group>";
+		};
+		C5E350C81D7400A80023E7F7 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350C91D7400A80023E7F7 /* Animation */,
+				C5E350CD1D7400A80023E7F7 /* Category */,
+				C5E350D61D7400A80023E7F7 /* Constants */,
+				C5E350D91D7400A80023E7F7 /* Controller */,
+				C5E350DD1D7400A80023E7F7 /* Model */,
+				C5E350E11D7400A80023E7F7 /* Resources */,
+				C5E350E41D7400A80023E7F7 /* View */,
+			);
+			name = FoldingTabBar;
+			path = ../../FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		C5E350C91D7400A80023E7F7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350CA1D7400A80023E7F7 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		C5E350CA1D7400A80023E7F7 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350CB1D7400A80023E7F7 /* YALSpringAnimation.h */,
+				C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		C5E350CD1D7400A80023E7F7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350CE1D7400A80023E7F7 /* CAAnimation */,
+				C5E350D21D7400A80023E7F7 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C5E350CE1D7400A80023E7F7 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350CF1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		C5E350CF1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350D01D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.h */,
+				C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		C5E350D21D7400A80023E7F7 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350D31D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		C5E350D31D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350D41D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		C5E350D61D7400A80023E7F7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350D71D7400A80023E7F7 /* YALAnimatingTabBarConstants.h */,
+				C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C5E350D91D7400A80023E7F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350DA1D7400A80023E7F7 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5E350DA1D7400A80023E7F7 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350DB1D7400A80023E7F7 /* YALFoldingTabBarController.h */,
+				C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		C5E350DD1D7400A80023E7F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350DE1D7400A80023E7F7 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5E350DE1D7400A80023E7F7 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350DF1D7400A80023E7F7 /* YALTabBarItem.h */,
+				C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		C5E350E11D7400A80023E7F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350E21D7400A80023E7F7 /* FoldingTabBar.h */,
+				C5E350E31D7400A80023E7F7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5E350E41D7400A80023E7F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350E51D7400A80023E7F7 /* CustomHeightTabBar */,
+				C5E350E81D7400A80023E7F7 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5E350E51D7400A80023E7F7 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350E61D7400A80023E7F7 /* YALCustomHeightTabBar.h */,
+				C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		C5E350E81D7400A80023E7F7 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350E91D7400A80023E7F7 /* YALFoldingTabBar.h */,
+				C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		C5E350F41D7402B00023E7F7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350F51D7402B00023E7F7 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C5E350F71D7402C20023E7F7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350F81D7402C20023E7F7 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C5E350FC1D7404420023E7F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350FD1D7404420023E7F7 /* Font */,
+			);
+			name = Resources;
+			path = "Example-Swift/Resources";
+			sourceTree = SOURCE_ROOT;
+		};
+		C5E350FD1D7404420023E7F7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C5E350FE1D7404420023E7F7 /* Code Pro LC.otf */,
+				C5E350FF1D7404420023E7F7 /* Proxima Nova Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C5E351001D7404420023E7F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5E3510F1D741FD80023E7F7 /* ChatCollectionViewCell.swift */,
+			);
+			name = View;
+			path = "Example-Swift/View";
+			sourceTree = SOURCE_ROOT;
+		};
+		C5E351021D7404420023E7F7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5B230531D74512100A625DF /* EmptyViewController.swift */,
+				C5E3510D1D741FC10023E7F7 /* ChatViewController.swift */,
+			);
+			name = ViewControllers;
+			path = "Example-Swift/ViewControllers";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5E3507F1D73FFEA0023E7F7 /* Example-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5E350921D73FFEA0023E7F7 /* Build configuration list for PBXNativeTarget "Example-Swift" */;
+			buildPhases = (
+				C5E3507C1D73FFEA0023E7F7 /* Sources */,
+				C5E3507D1D73FFEA0023E7F7 /* Frameworks */,
+				C5E3507E1D73FFEA0023E7F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-Swift";
+			productName = "Example-Swift";
+			productReference = C5E350801D73FFEA0023E7F7 /* Example-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5E350781D73FFEA0023E7F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yalantis;
+				TargetAttributes = {
+					C5E3507F1D73FFEA0023E7F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C5E3507B1D73FFEA0023E7F7 /* Build configuration list for PBXProject "Example-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5E350771D73FFEA0023E7F7;
+			productRefGroup = C5E350811D73FFEA0023E7F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5E3507F1D73FFEA0023E7F7 /* Example-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5E3507E1D73FFEA0023E7F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E350F11D7400A80023E7F7 /* Info.plist in Resources */,
+				C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */,
+				C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */,
+				C5E351071D7404420023E7F7 /* Code Pro LC.otf in Resources */,
+				C5E351081D7404420023E7F7 /* Proxima Nova Regular.otf in Resources */,
+				C5E350F91D7402C20023E7F7 /* Main.storyboard in Resources */,
+				C5E3508E1D73FFEA0023E7F7 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5E3507C1D73FFEA0023E7F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */,
+				C5E3510E1D741FC10023E7F7 /* ChatViewController.swift in Sources */,
+				C5E350EF1D7400A80023E7F7 /* YALFoldingTabBarController.m in Sources */,
+				C5E350F21D7400A80023E7F7 /* YALCustomHeightTabBar.m in Sources */,
+				C5E350EE1D7400A80023E7F7 /* YALAnimatingTabBarConstants.m in Sources */,
+				C5E350F01D7400A80023E7F7 /* YALTabBarItem.m in Sources */,
+				C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				C5E350EB1D7400A80023E7F7 /* YALSpringAnimation.m in Sources */,
+				C5E350F31D7400A80023E7F7 /* YALFoldingTabBar.m in Sources */,
+				C5E350F61D7402B00023E7F7 /* AppDelegate.swift in Sources */,
+				C5E351101D741FD80023E7F7 /* ChatCollectionViewCell.swift in Sources */,
+				C5E350EC1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5E3508D1D73FFEA0023E7F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5E350901D73FFEA0023E7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5E350911D73FFEA0023E7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5E350931D73FFEA0023E7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Example-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yalantis.Example-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example-Swift/Example-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5E350941D73FFEA0023E7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Example-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yalantis.Example-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Example-Swift/Example-Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5E3507B1D73FFEA0023E7F7 /* Build configuration list for PBXProject "Example-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5E350901D73FFEA0023E7F7 /* Debug */,
+				C5E350911D73FFEA0023E7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5E350921D73FFEA0023E7F7 /* Build configuration list for PBXNativeTarget "Example-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5E350931D73FFEA0023E7F7 /* Debug */,
+				C5E350941D73FFEA0023E7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5E350781D73FFEA0023E7F7 /* Project object */;
+}
