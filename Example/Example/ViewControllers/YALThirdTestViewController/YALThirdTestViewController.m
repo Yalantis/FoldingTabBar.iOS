@@ -12,7 +12,7 @@ NSString *const YALChatDemeDateText = @"dateText";
 //view
 #import "YALChatDemoCollectionViewCell.h"
 
-@interface YALThirdTestViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface YALThirdTestViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UICollectionView *chatDemoCollectionView;
 @property (nonatomic, copy) NSArray *chatDemoData;
@@ -148,6 +148,13 @@ NSString *const YALChatDemeDateText = @"dateText";
     return CGSizeMake(CGRectGetWidth(self.view.bounds), layout.itemSize.height);
 }
 
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"test" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:NULL];
+}
 
 #pragma mark - Segue
 
