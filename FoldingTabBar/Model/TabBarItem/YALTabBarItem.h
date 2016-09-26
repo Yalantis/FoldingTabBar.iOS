@@ -3,14 +3,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface YALTabBarItem : NSObject
 
-@property (nonatomic, strong) UIImage *itemImage;
-@property (nonatomic, strong) UIImage *leftImage;
-@property (nonatomic, strong) UIImage *rightImage;
+@property (nonatomic, strong, nullable) UIImage *itemImage;
+@property (nonatomic, strong, nullable) UIImage *leftImage;
+@property (nonatomic, strong, nullable) UIImage *rightImage;
 
-- (instancetype)initWithItemImage:(UIImage *)itemImage
-                    leftItemImage:(UIImage *)leftItemImage
-                   rightItemImage:(UIImage *)rightItemImage;
+- (instancetype)initWithItemImage:(UIImage * _Nullable)itemImage
+                    leftItemImage:(UIImage * _Nullable)leftItemImage
+                   rightItemImage:(UIImage * _Nullable)rightItemImage;
 
 @end
+
+NS_ASSUME_NONNULL_END
