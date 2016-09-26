@@ -10,17 +10,17 @@ import UIKit
 
 class ChatCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet private weak var chatImageView: UIImageView!
-    @IBOutlet private weak var userNameLabel: UILabel!
-    @IBOutlet private weak var messageLabel: UILabel!
-    @IBOutlet private weak var dateLabel: UILabel!
-    @IBOutlet private weak var notificationImageView: UIImageView!
+    @IBOutlet fileprivate weak var chatImageView: UIImageView!
+    @IBOutlet fileprivate weak var userNameLabel: UILabel!
+    @IBOutlet fileprivate weak var messageLabel: UILabel!
+    @IBOutlet fileprivate weak var dateLabel: UILabel!
+    @IBOutlet fileprivate weak var notificationImageView: UIImageView!
 
-    override var selected: Bool {
+    override var isSelected: Bool {
         didSet {
-            notificationImageView.hidden = !selected
+            notificationImageView.isHidden = !isSelected
             
-            if selected {
+            if isSelected {
                 backgroundColor = UIColor(red: 108.0/255.0, green: 105.0/255.0, blue: 164.0/255.0, alpha: 1)
             } else {
                 backgroundColor = UIColor(red: 102.0/255.0, green: 99.0/255.0, blue: 157.0/255.0, alpha: 1)

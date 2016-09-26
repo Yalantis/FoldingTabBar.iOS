@@ -10,19 +10,19 @@ import UIKit
 
 class EmptyViewController: UIViewController, YALTabBarDelegate {
     
-    func tabBarWillExpand(tabBar: YALFoldingTabBar!) {
+    func tabBarWillExpand(_ tabBar: YALFoldingTabBar) {
         print("will expand")
     }
 
-    func tabBarDidExpand(tabBar: YALFoldingTabBar!) {
+    func tabBarDidExpand(_ tabBar: YALFoldingTabBar) {
         print("did expand")
     }
     
-    func tabBarWillCollapse(tabBar: YALFoldingTabBar!) {
+    func tabBarWillCollapse(_ tabBar: YALFoldingTabBar) {
         print("will collapse")
     }
     
-    func tabBarDidCollapse(tabBar: YALFoldingTabBar!) {
+    func tabBarDidCollapse(_ tabBar: YALFoldingTabBar) {
         print("did collapse")
     }
 }

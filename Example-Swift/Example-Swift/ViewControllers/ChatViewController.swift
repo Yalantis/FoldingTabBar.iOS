@@ -19,26 +19,26 @@ class ChatViewController: UIViewController {
     
     typealias Message = [String: String]
     
-    private var messages: [Message] = []
+    fileprivate var messages: [Message] = []
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        messages = NSArray(contentsOfFile: NSBundle.mainBundle().pathForResource("YALChatDemoList", ofType: "plist")!) as! [Message]
+        messages = NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message]
     }
 }
 
 extension ChatViewController: UICollectionViewDataSource {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ChatCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ChatCollectionViewCell
         
-        let message = messages[indexPath.row]
+        let message = messages[(indexPath as NSIndexPath).row]
         
         cell.configure(
             withImage: UIImage(named: message[ChatDemoImageName]!)!,
@@ -53,7 +53,7 @@ extension ChatViewController: UICollectionViewDataSource {
 
 extension ChatViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         return CGSize(width: view.bounds.width, height: layout.itemSize.height)
     }
@@ -61,7 +61,7 @@ extension ChatViewController: UICollectionViewDelegateFlowLayout {
 
 extension ChatViewController {
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        segue.destinationViewController.hidesBottomBarWhenPushed = true
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.hidesBottomBarWhenPushed = true
     }
 }

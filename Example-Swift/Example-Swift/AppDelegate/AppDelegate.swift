@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupYALTabBarController()
         
         return true
@@ -34,7 +34,7 @@ private extension AppDelegate {
         let item4 = YALTabBarItem(itemImage: UIImage(named: "settings_icon"), leftItemImage: nil, rightItemImage: nil)
         tabBarController.rightBarItems = [item3, item4]
         
-        tabBarController.centerButtonImage = UIImage(named:"plus_icon")
+        tabBarController.centerButtonImage = UIImage(named:"plus_icon")!
         tabBarController.selectedIndex = 2
 
         //customize tabBarView
