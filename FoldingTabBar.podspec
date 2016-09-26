@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "FoldingTabBar"
-  spec.version = "1.0.8"
+  spec.version = "1.1"
 
   spec.homepage = "https://github.com/Yalantis/FoldingTabBar.iOS"
   spec.summary = "Folding Tab Bar and Tab Bar Controller"

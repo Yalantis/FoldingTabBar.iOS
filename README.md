@@ -1,8 +1,8 @@
-# FoldingTabBar.iOS [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+# FoldingTabBar.iOS 
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/FoldingTabBar.svg)](https://img.shields.io/cocoapods/v/FoldingTabBar.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Folding Tab Bar and Tab Bar Controller
-
-Made in [![Yalantis](https://raw.githubusercontent.com/Yalantis/FoldingTabBar.iOS/master/Example/Example/Resources/Images/badge_orage_shadow.png)](https://yalantis.com/?utm_source=github)
 
 Inspired by [this project on Dribbble](https://dribbble.com/shots/2003376-Tab-Bar-Animation)
 
@@ -16,14 +16,16 @@ iOS 7.0
 
 ## Installation
 
-####[Carthage](https://github.com/Carthage/Carthage)
-```
-github "Yalantis/FoldingTabBar.iOS"
+####[CocoaPods](http://cocoapods.org)
+
+```ruby
+pod 'FoldingTabBar', '~> 1.1'
 ```
 
-####[CocoaPods](http://cocoapods.org)
-```ruby
-pod 'FoldingTabBar', '~> 1.0'
+####[Carthage](https://github.com/Carthage/Carthage)
+
+```
+github "Yalantis/FoldingTabBar.iOS" ~> 1.1
 ```
 
 ####Manual Installation
