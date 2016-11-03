@@ -89,6 +89,7 @@ Here is an instruction of how to use `YALFoldingTabBarController` in the Storybo
     YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"settings_icon"]
                                                       leftItemImage:nil
                                                      rightItemImage:nil];
+    tabBarController.rightBarItems = @[item3, item4];
 
 ```
 ##Swift
