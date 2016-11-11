@@ -430,12 +430,19 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     if (item.leftImage) {
         self.extraLeftButton.hidden = NO;
         [self.extraLeftButton setImage:item.leftImage forState:UIControlStateNormal];
+        if (item.leftHighlightedImage) {
+            [self.extraLeftButton setImage:item.leftHighlightedImage forState:UIControlStateHighlighted];
+        }
+        
     } else {
         self.extraLeftButton.hidden = YES;
     }
     if (item.rightImage) {
         self.extraRightButton.hidden = NO;
         [self.extraRightButton setImage:item.rightImage forState:UIControlStateNormal];
+        if (item.rightHighlightedImage) {
+            [self.extraRightButton setImage:item.rightHighlightedImage forState:UIControlStateHighlighted];
+        }
     } else {
         self.extraRightButton.hidden = YES;
     }
