@@ -9,7 +9,13 @@ CGFloat const YALExtraTabBarItemsDefaultHeight = 48.f;
 CGFloat const YALForExtraTabBarItemsDefaultOffset = 15.f;
 UIEdgeInsets const YALTabBarViewHDefaultEdgeInsets = {10.f, 14.f, 10.f, 14.f};
 UIEdgeInsets const YALTabBarViewItemsDefaultEdgeInsets = {0.f, 0.f, 0.f, 0.f};
-
+NSString * const YALCenterButtonExpandAnimation = @"CENTER_BUTTON_EXPAND_ANIMATION";
+NSString * const YALCenterButtonCollapseAnimation = @"CENTER_BUTTON_COLLAPSE_ANIMATION";
+NSString * const YALAdditionalButtonsAnimation = @"ADDITIONAL_BUTTONS_ANIMATION";
+NSString * const YALTabBarExpandAnimation = @"TABBAR_EXPAND_ANIMATION";
+NSString * const YALTabBarExpandCollapseAnimation = @"TABBAR_COLLAPSE_ANIMATION";
+NSString * const YALExtraLeftBarItemAnimation = @"EXTRA_LEFT_BAR_ITEM_ANIMATION";
+NSString * const YALExtraRightBarItemAnimation = @"EXTRA_RIGHT_BAR_ITEM_ANIMATION";
 
 CFTimeInterval const kYALExpandAnimationDuration = 1.0;
 
