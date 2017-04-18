@@ -9,7 +9,13 @@ extern CGFloat const YALExtraTabBarItemsDefaultHeight;
 extern CGFloat const YALForExtraTabBarItemsDefaultOffset;
 extern UIEdgeInsets const YALTabBarViewHDefaultEdgeInsets;
 extern UIEdgeInsets const YALTabBarViewItemsDefaultEdgeInsets;
-
+extern NSString * const YALCenterButtonExpandAnimation;
+extern NSString * const YALCenterButtonCollapseAnimation;
+extern NSString * const YALAdditionalButtonsAnimation;
+extern NSString * const YALTabBarExpandAnimation;
+extern NSString * const YALTabBarExpandCollapseAnimation;
+extern NSString * const YALExtraLeftBarItemAnimation;
+extern NSString * const YALExtraRightBarItemAnimation;
 
 extern CFTimeInterval const kYALExpandAnimationDuration;
 
