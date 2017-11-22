@@ -22,11 +22,26 @@ class ChatViewController: UIViewController {
     fileprivate var messages: [Message] = []
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    //MARK: - View & VC life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         messages = NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message]
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        prepareVisibleCellsForAnimation()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        animateVisibleCells()
+    }
+    
 }
 
 extension ChatViewController: UICollectionViewDataSource {
@@ -64,4 +79,28 @@ extension ChatViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.hidesBottomBarWhenPushed = true
     }
+}
+
+//MARK: - Cell's animation
+private extension ChatViewController {
+    
+    func prepareVisibleCellsForAnimation() {
+        for itemIndex in 0..<collectionView.visibleCells.count {
+         let cell = collectionView.cellForItem(at: IndexPath(item: itemIndex, section: 0)) as! ChatCollectionViewCell
+            cell.frame = CGRect(x: -cell.bounds.width, y: cell.frame.origin.y, width: cell.bounds.width, height: cell.bounds.height)
+            cell.alpha = 0
+        }
+    }
+    
+    func animateVisibleCells() {
+        for itemIndex in 0..<collectionView.visibleCells.count {
+            let cell = collectionView.cellForItem(at: IndexPath(item: itemIndex, section: 0)) as! ChatCollectionViewCell
+            cell.alpha = 1
+            UIView.animate(withDuration: 0.25, delay: Double(itemIndex) * 0.1, options: .curveEaseOut, animations: {
+                cell.frame = CGRect(x: 0, y: cell.frame.origin.y, width: cell.bounds.width, height: cell.bounds.height)
+            })
+            
+        }
+    }
+    
 }
