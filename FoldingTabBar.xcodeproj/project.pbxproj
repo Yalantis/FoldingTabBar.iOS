@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4424193F1D1416AF003A197C /* YALCustomHeightTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4424193D1D1416AF003A197C /* YALCustomHeightTabBar.h */; };
 		442419401D1416AF003A197C /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424193E1D1416AF003A197C /* YALCustomHeightTabBar.m */; };
+		A502DF3F1FC5C3EA0050A3E7 /* UIView+Insets.h in Headers */ = {isa = PBXBuildFile; fileRef = A502DF3D1FC5C3EA0050A3E7 /* UIView+Insets.h */; };
+		A502DF401FC5C3EA0050A3E7 /* UIView+Insets.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF3E1FC5C3EA0050A3E7 /* UIView+Insets.m */; };
 		C59E27931C04719600E3BFBF /* YALSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27731C04719600E3BFBF /* YALSpringAnimation.h */; };
 		C59E27941C04719600E3BFBF /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E27741C04719600E3BFBF /* YALSpringAnimation.m */; };
 		C59E27951C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27781C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		4424193D1D1416AF003A197C /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
 		4424193E1D1416AF003A197C /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		A502DF3D1FC5C3EA0050A3E7 /* UIView+Insets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Insets.h"; sourceTree = "<group>"; };
+		A502DF3E1FC5C3EA0050A3E7 /* UIView+Insets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Insets.m"; sourceTree = "<group>"; };
 		C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoldingTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59E27731C04719600E3BFBF /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
 		C59E27741C04719600E3BFBF /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 				4424193E1D1416AF003A197C /* YALCustomHeightTabBar.m */,
 			);
 			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		A502DF3C1FC5C3C80050A3E7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF3D1FC5C3EA0050A3E7 /* UIView+Insets.h */,
+				A502DF3E1FC5C3EA0050A3E7 /* UIView+Insets.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		C59E27421C04708A00E3BFBF = {
@@ -119,6 +132,7 @@
 		C59E27751C04719600E3BFBF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A502DF3C1FC5C3C80050A3E7 /* UIView */,
 				C59E27761C04719600E3BFBF /* CAAnimation */,
 				C59E277A1C04719600E3BFBF /* CATransaction */,
 			);
@@ -245,6 +259,7 @@
 				C59E27A21C04719600E3BFBF /* YALFoldingTabBar.h in Headers */,
 				C59E27971C04719600E3BFBF /* CATransaction+TransactionWithAnimationsAndCompletion.h in Headers */,
 				4424193F1D1416AF003A197C /* YALCustomHeightTabBar.h in Headers */,
+				A502DF3F1FC5C3EA0050A3E7 /* UIView+Insets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +338,7 @@
 				C59E27941C04719600E3BFBF /* YALSpringAnimation.m in Sources */,
 				C59E27961C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				C59E279C1C04719600E3BFBF /* YALFoldingTabBarController.m in Sources */,
+				A502DF401FC5C3EA0050A3E7 /* UIView+Insets.m in Sources */,
 				C59E279A1C04719600E3BFBF /* YALAnimatingTabBarConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
