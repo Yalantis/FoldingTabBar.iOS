@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A502DF971FC5CB310050A3E7 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF751FC5CB310050A3E7 /* YALSpringAnimation.m */; };
+		A502DF981FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF7A1FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		A502DF991FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF7E1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		A502DF9A1FC5CB310050A3E7 /* UIView+Insets.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF811FC5CB310050A3E7 /* UIView+Insets.m */; };
+		A502DF9B1FC5CB310050A3E7 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF841FC5CB310050A3E7 /* YALAnimatingTabBarConstants.m */; };
+		A502DF9C1FC5CB310050A3E7 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF881FC5CB310050A3E7 /* YALFoldingTabBarController.m */; };
+		A502DF9D1FC5CB310050A3E7 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF8C1FC5CB310050A3E7 /* YALTabBarItem.m */; };
+		A502DF9E1FC5CB310050A3E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A502DF8F1FC5CB310050A3E7 /* Info.plist */; };
+		A502DF9F1FC5CB310050A3E7 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF931FC5CB310050A3E7 /* YALCustomHeightTabBar.m */; };
+		A502DFA01FC5CB310050A3E7 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF961FC5CB310050A3E7 /* YALFoldingTabBar.m */; };
 		C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B230531D74512100A625DF /* EmptyViewController.swift */; };
 		C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B230551D7451E200A625DF /* YALChatDemoList.plist */; };
 		C5E3508E1D73FFEA0023E7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */; };
-		C5E350EB1D7400A80023E7F7 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */; };
-		C5E350EC1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */; };
-		C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
-		C5E350EE1D7400A80023E7F7 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */; };
-		C5E350EF1D7400A80023E7F7 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */; };
-		C5E350F01D7400A80023E7F7 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */; };
-		C5E350F11D7400A80023E7F7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5E350E31D7400A80023E7F7 /* Info.plist */; };
-		C5E350F21D7400A80023E7F7 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */; };
-		C5E350F31D7400A80023E7F7 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */; };
 		C5E350F61D7402B00023E7F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E350F51D7402B00023E7F7 /* AppDelegate.swift */; };
 		C5E350F91D7402C20023E7F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E350F81D7402C20023E7F7 /* Main.storyboard */; };
 		C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E350FA1D7404280023E7F7 /* Images.xcassets */; };
@@ -29,30 +30,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A502DF741FC5CB310050A3E7 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		A502DF751FC5CB310050A3E7 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		A502DF791FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		A502DF7A1FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		A502DF7D1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		A502DF7E1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		A502DF801FC5CB310050A3E7 /* UIView+Insets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Insets.h"; sourceTree = "<group>"; };
+		A502DF811FC5CB310050A3E7 /* UIView+Insets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Insets.m"; sourceTree = "<group>"; };
+		A502DF831FC5CB310050A3E7 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		A502DF841FC5CB310050A3E7 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		A502DF871FC5CB310050A3E7 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		A502DF881FC5CB310050A3E7 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		A502DF8B1FC5CB310050A3E7 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		A502DF8C1FC5CB310050A3E7 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		A502DF8E1FC5CB310050A3E7 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		A502DF8F1FC5CB310050A3E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A502DF921FC5CB310050A3E7 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		A502DF931FC5CB310050A3E7 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		A502DF951FC5CB310050A3E7 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		A502DF961FC5CB310050A3E7 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
 		C5B230531D74512100A625DF /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		C5B230551D7451E200A625DF /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
 		C5E350801D73FFEA0023E7F7 /* Example-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E3508D1D73FFEA0023E7F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5E3508F1D73FFEA0023E7F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5E350C41D74009B0023E7F7 /* Example-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		C5E350CB1D7400A80023E7F7 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
-		C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
-		C5E350D01D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
-		C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
-		C5E350D41D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
-		C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
-		C5E350D71D7400A80023E7F7 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
-		C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
-		C5E350DB1D7400A80023E7F7 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
-		C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
-		C5E350DF1D7400A80023E7F7 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
-		C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
-		C5E350E21D7400A80023E7F7 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
-		C5E350E31D7400A80023E7F7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5E350E61D7400A80023E7F7 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
-		C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
-		C5E350E91D7400A80023E7F7 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
-		C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
 		C5E350F51D7402B00023E7F7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5E350F81D7402C20023E7F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C5E350FA1D7404280023E7F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -73,6 +76,170 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A502DF711FC5CB310050A3E7 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF721FC5CB310050A3E7 /* Animation */,
+				A502DF761FC5CB310050A3E7 /* Category */,
+				A502DF821FC5CB310050A3E7 /* Constants */,
+				A502DF851FC5CB310050A3E7 /* Controller */,
+				A502DF891FC5CB310050A3E7 /* Model */,
+				A502DF8D1FC5CB310050A3E7 /* Resources */,
+				A502DF901FC5CB310050A3E7 /* View */,
+			);
+			name = FoldingTabBar;
+			path = ../../FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		A502DF721FC5CB310050A3E7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF731FC5CB310050A3E7 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		A502DF731FC5CB310050A3E7 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF741FC5CB310050A3E7 /* YALSpringAnimation.h */,
+				A502DF751FC5CB310050A3E7 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		A502DF761FC5CB310050A3E7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF771FC5CB310050A3E7 /* CAAnimation */,
+				A502DF7B1FC5CB310050A3E7 /* CATransaction */,
+				A502DF7F1FC5CB310050A3E7 /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A502DF771FC5CB310050A3E7 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF781FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		A502DF781FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF791FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.h */,
+				A502DF7A1FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		A502DF7B1FC5CB310050A3E7 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF7C1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		A502DF7C1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF7D1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				A502DF7E1FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		A502DF7F1FC5CB310050A3E7 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF801FC5CB310050A3E7 /* UIView+Insets.h */,
+				A502DF811FC5CB310050A3E7 /* UIView+Insets.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A502DF821FC5CB310050A3E7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF831FC5CB310050A3E7 /* YALAnimatingTabBarConstants.h */,
+				A502DF841FC5CB310050A3E7 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A502DF851FC5CB310050A3E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF861FC5CB310050A3E7 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A502DF861FC5CB310050A3E7 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF871FC5CB310050A3E7 /* YALFoldingTabBarController.h */,
+				A502DF881FC5CB310050A3E7 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		A502DF891FC5CB310050A3E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF8A1FC5CB310050A3E7 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A502DF8A1FC5CB310050A3E7 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF8B1FC5CB310050A3E7 /* YALTabBarItem.h */,
+				A502DF8C1FC5CB310050A3E7 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		A502DF8D1FC5CB310050A3E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF8E1FC5CB310050A3E7 /* FoldingTabBar.h */,
+				A502DF8F1FC5CB310050A3E7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A502DF901FC5CB310050A3E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF911FC5CB310050A3E7 /* CustomHeightTabBar */,
+				A502DF941FC5CB310050A3E7 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A502DF911FC5CB310050A3E7 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF921FC5CB310050A3E7 /* YALCustomHeightTabBar.h */,
+				A502DF931FC5CB310050A3E7 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		A502DF941FC5CB310050A3E7 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF951FC5CB310050A3E7 /* YALFoldingTabBar.h */,
+				A502DF961FC5CB310050A3E7 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
 		C5E350771D73FFEA0023E7F7 = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +259,12 @@
 		C5E350821D73FFEA0023E7F7 /* Example-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A502DF711FC5CB310050A3E7 /* FoldingTabBar */,
 				C5E350C41D74009B0023E7F7 /* Example-Swift-Bridging-Header.h */,
 				C5E3508F1D73FFEA0023E7F7 /* Info.plist */,
 				C5B230551D7451E200A625DF /* YALChatDemoList.plist */,
 				C5E350FA1D7404280023E7F7 /* Images.xcassets */,
 				C5E350F41D7402B00023E7F7 /* AppDelegate */,
-				C5E350C81D7400A80023E7F7 /* FoldingTabBar */,
 				C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */,
 				C5E350FC1D7404420023E7F7 /* Resources */,
 				C5E350F71D7402C20023E7F7 /* Storyboard */,
@@ -105,160 +272,6 @@
 				C5E351021D7404420023E7F7 /* ViewControllers */,
 			);
 			path = "Example-Swift";
-			sourceTree = "<group>";
-		};
-		C5E350C81D7400A80023E7F7 /* FoldingTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350C91D7400A80023E7F7 /* Animation */,
-				C5E350CD1D7400A80023E7F7 /* Category */,
-				C5E350D61D7400A80023E7F7 /* Constants */,
-				C5E350D91D7400A80023E7F7 /* Controller */,
-				C5E350DD1D7400A80023E7F7 /* Model */,
-				C5E350E11D7400A80023E7F7 /* Resources */,
-				C5E350E41D7400A80023E7F7 /* View */,
-			);
-			name = FoldingTabBar;
-			path = ../../FoldingTabBar;
-			sourceTree = "<group>";
-		};
-		C5E350C91D7400A80023E7F7 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350CA1D7400A80023E7F7 /* YALSpringAnimation */,
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
-		C5E350CA1D7400A80023E7F7 /* YALSpringAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350CB1D7400A80023E7F7 /* YALSpringAnimation.h */,
-				C5E350CC1D7400A80023E7F7 /* YALSpringAnimation.m */,
-			);
-			path = YALSpringAnimation;
-			sourceTree = "<group>";
-		};
-		C5E350CD1D7400A80023E7F7 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350CE1D7400A80023E7F7 /* CAAnimation */,
-				C5E350D21D7400A80023E7F7 /* CATransaction */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		C5E350CE1D7400A80023E7F7 /* CAAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350CF1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations */,
-			);
-			path = CAAnimation;
-			sourceTree = "<group>";
-		};
-		C5E350CF1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350D01D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.h */,
-				C5E350D11D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m */,
-			);
-			path = "CAAnimation+YALTabBarViewAnimations";
-			sourceTree = "<group>";
-		};
-		C5E350D21D7400A80023E7F7 /* CATransaction */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350D31D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion */,
-			);
-			path = CATransaction;
-			sourceTree = "<group>";
-		};
-		C5E350D31D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350D41D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
-				C5E350D51D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
-			);
-			path = "CATransaction+TransactionWithAnimationsAndCompletion";
-			sourceTree = "<group>";
-		};
-		C5E350D61D7400A80023E7F7 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350D71D7400A80023E7F7 /* YALAnimatingTabBarConstants.h */,
-				C5E350D81D7400A80023E7F7 /* YALAnimatingTabBarConstants.m */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		C5E350D91D7400A80023E7F7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350DA1D7400A80023E7F7 /* FoldingTabBarController */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C5E350DA1D7400A80023E7F7 /* FoldingTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350DB1D7400A80023E7F7 /* YALFoldingTabBarController.h */,
-				C5E350DC1D7400A80023E7F7 /* YALFoldingTabBarController.m */,
-			);
-			path = FoldingTabBarController;
-			sourceTree = "<group>";
-		};
-		C5E350DD1D7400A80023E7F7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350DE1D7400A80023E7F7 /* TabBarItem */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C5E350DE1D7400A80023E7F7 /* TabBarItem */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350DF1D7400A80023E7F7 /* YALTabBarItem.h */,
-				C5E350E01D7400A80023E7F7 /* YALTabBarItem.m */,
-			);
-			path = TabBarItem;
-			sourceTree = "<group>";
-		};
-		C5E350E11D7400A80023E7F7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350E21D7400A80023E7F7 /* FoldingTabBar.h */,
-				C5E350E31D7400A80023E7F7 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		C5E350E41D7400A80023E7F7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350E51D7400A80023E7F7 /* CustomHeightTabBar */,
-				C5E350E81D7400A80023E7F7 /* FoldingTabBar */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C5E350E51D7400A80023E7F7 /* CustomHeightTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350E61D7400A80023E7F7 /* YALCustomHeightTabBar.h */,
-				C5E350E71D7400A80023E7F7 /* YALCustomHeightTabBar.m */,
-			);
-			path = CustomHeightTabBar;
-			sourceTree = "<group>";
-		};
-		C5E350E81D7400A80023E7F7 /* FoldingTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C5E350E91D7400A80023E7F7 /* YALFoldingTabBar.h */,
-				C5E350EA1D7400A80023E7F7 /* YALFoldingTabBar.m */,
-			);
-			path = FoldingTabBar;
 			sourceTree = "<group>";
 		};
 		C5E350F41D7402B00023E7F7 /* AppDelegate */ = {
@@ -373,13 +386,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E350F11D7400A80023E7F7 /* Info.plist in Resources */,
 				C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */,
 				C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */,
 				C5E351071D7404420023E7F7 /* Code Pro LC.otf in Resources */,
 				C5E351081D7404420023E7F7 /* Proxima Nova Regular.otf in Resources */,
 				C5E350F91D7402C20023E7F7 /* Main.storyboard in Resources */,
 				C5E3508E1D73FFEA0023E7F7 /* LaunchScreen.storyboard in Resources */,
+				A502DF9E1FC5CB310050A3E7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,17 +404,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */,
+				A502DF981FC5CB310050A3E7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
 				C5E3510E1D741FC10023E7F7 /* ChatViewController.swift in Sources */,
-				C5E350EF1D7400A80023E7F7 /* YALFoldingTabBarController.m in Sources */,
-				C5E350F21D7400A80023E7F7 /* YALCustomHeightTabBar.m in Sources */,
-				C5E350EE1D7400A80023E7F7 /* YALAnimatingTabBarConstants.m in Sources */,
-				C5E350F01D7400A80023E7F7 /* YALTabBarItem.m in Sources */,
-				C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
-				C5E350EB1D7400A80023E7F7 /* YALSpringAnimation.m in Sources */,
-				C5E350F31D7400A80023E7F7 /* YALFoldingTabBar.m in Sources */,
 				C5E350F61D7402B00023E7F7 /* AppDelegate.swift in Sources */,
+				A502DF9B1FC5CB310050A3E7 /* YALAnimatingTabBarConstants.m in Sources */,
+				A502DFA01FC5CB310050A3E7 /* YALFoldingTabBar.m in Sources */,
+				A502DF9A1FC5CB310050A3E7 /* UIView+Insets.m in Sources */,
+				A502DF9D1FC5CB310050A3E7 /* YALTabBarItem.m in Sources */,
 				C5E351101D741FD80023E7F7 /* ChatCollectionViewCell.swift in Sources */,
-				C5E350EC1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				A502DF9F1FC5CB310050A3E7 /* YALCustomHeightTabBar.m in Sources */,
+				A502DF991FC5CB310050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				A502DF9C1FC5CB310050A3E7 /* YALFoldingTabBarController.m in Sources */,
+				A502DF971FC5CB310050A3E7 /* YALSpringAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

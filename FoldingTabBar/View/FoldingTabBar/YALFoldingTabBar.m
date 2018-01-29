@@ -7,6 +7,7 @@
 
 #import "CAAnimation+YALTabBarViewAnimations.h"
 #import "CATransaction+TransactionWithAnimationsAndCompletion.h"
+#import "UIView+Insets.h"
 
 typedef NS_ENUM(NSUInteger, YALAnimatingState) {
     YALAnimatingStateCollapsing,
@@ -160,7 +161,13 @@ typedef NS_ENUM(NSUInteger, YALAnimatingState) {
 }
     
 - (void)setupMainView {
-    self.mainView = [[UIView alloc] initWithFrame:UIEdgeInsetsInsetRect(self.bounds, self.tabBarViewEdgeInsets)];
+    CGRect frame = CGRectMake(self.bounds.origin.x,
+                              self.bounds.origin.y,
+                              self.bounds.size.width,
+                              self.bounds.size.height - self.bottomInset);
+    frame = UIEdgeInsetsInsetRect(frame, self.tabBarViewEdgeInsets);
+    
+    self.mainView = [[UIView alloc] initWithFrame:frame];
     
     self.expandedFrame = self.mainView.frame;
     self.mainView.layer.cornerRadius = CGRectGetHeight(self.mainView.bounds) / 2.f;

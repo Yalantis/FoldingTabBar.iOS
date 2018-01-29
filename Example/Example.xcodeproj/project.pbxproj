@@ -20,14 +20,16 @@
 		3EDA44481AC5667500AE33CD /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA44351AC5667500AE33CD /* YALChatDemoList.plist */; };
 		3EDA44491AC5667500AE33CD /* YALThirdTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */; };
 		3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */; };
-		5B6430981C11E0E0005E8851 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */; };
-		C92CAA6C1ACE8B7000F5645A /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */; };
-		C92CAA6D1ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */; };
-		C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
-		C92CAA6F1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */; };
-		C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */; };
-		C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */; };
-		C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */; };
+		A502DF671FC5C5DD0050A3E7 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF451FC5C5DD0050A3E7 /* YALSpringAnimation.m */; };
+		A502DF681FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF4A1FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		A502DF691FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF4E1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		A502DF6A1FC5C5DD0050A3E7 /* UIView+Insets.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF511FC5C5DD0050A3E7 /* UIView+Insets.m */; };
+		A502DF6B1FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF541FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.m */; };
+		A502DF6C1FC5C5DD0050A3E7 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF581FC5C5DD0050A3E7 /* YALFoldingTabBarController.m */; };
+		A502DF6D1FC5C5DD0050A3E7 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF5C1FC5C5DD0050A3E7 /* YALTabBarItem.m */; };
+		A502DF6E1FC5C5DD0050A3E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A502DF5F1FC5C5DD0050A3E7 /* Info.plist */; };
+		A502DF6F1FC5C5DD0050A3E7 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF631FC5C5DD0050A3E7 /* YALCustomHeightTabBar.m */; };
+		A502DF701FC5C5DD0050A3E7 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A502DF661FC5C5DD0050A3E7 /* YALFoldingTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,22 +54,26 @@
 		3EDA44361AC5667500AE33CD /* YALThirdTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALThirdTestViewController.h; sourceTree = "<group>"; };
 		3EDA44371AC5667500AE33CD /* YALThirdTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALThirdTestViewController.m; sourceTree = "<group>"; };
 		3EDA443A1AC5667500AE33CD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		5B6430961C11E0E0005E8851 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
-		5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
-		C92CAA4F1ACE8B7000F5645A /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
-		C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
-		C92CAA541ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
-		C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
-		C92CAA581ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
-		C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
-		C92CAA5B1ACE8B7000F5645A /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
-		C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
-		C92CAA5F1ACE8B7000F5645A /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
-		C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
-		C92CAA631ACE8B7000F5645A /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
-		C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
-		C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
-		C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		A502DF441FC5C5DD0050A3E7 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		A502DF451FC5C5DD0050A3E7 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		A502DF491FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		A502DF4A1FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		A502DF4D1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		A502DF4E1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		A502DF501FC5C5DD0050A3E7 /* UIView+Insets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Insets.h"; sourceTree = "<group>"; };
+		A502DF511FC5C5DD0050A3E7 /* UIView+Insets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Insets.m"; sourceTree = "<group>"; };
+		A502DF531FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		A502DF541FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		A502DF571FC5C5DD0050A3E7 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		A502DF581FC5C5DD0050A3E7 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		A502DF5B1FC5C5DD0050A3E7 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		A502DF5C1FC5C5DD0050A3E7 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		A502DF5E1FC5C5DD0050A3E7 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		A502DF5F1FC5C5DD0050A3E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A502DF621FC5C5DD0050A3E7 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		A502DF631FC5C5DD0050A3E7 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		A502DF651FC5C5DD0050A3E7 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		A502DF661FC5C5DD0050A3E7 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +106,11 @@
 		3EDA440F1AC5667500AE33CD /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				A502DF411FC5C5DD0050A3E7 /* FoldingTabBar */,
 				3EDA44241AC5667500AE33CD /* Storyboard */,
 				3EDA44101AC5667500AE33CD /* AppDelegate */,
 				3EDA442A1AC5667500AE33CD /* ViewControllers */,
 				3EDA44261AC5667500AE33CD /* View */,
-				C92CAA4C1ACE8B7000F5645A /* FoldingTabBar */,
 				3EDA44201AC5667500AE33CD /* Resources */,
 				3EDA44381AC5667500AE33CD /* Xib */,
 				3EDA44191AC5667500AE33CD /* Images.xcassets */,
@@ -229,154 +235,166 @@
 			path = LaunchXib;
 			sourceTree = "<group>";
 		};
-		5B6430951C11E0E0005E8851 /* CustomHeightTabBar */ = {
+		A502DF411FC5C5DD0050A3E7 /* FoldingTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				5B6430961C11E0E0005E8851 /* YALCustomHeightTabBar.h */,
-				5B6430971C11E0E0005E8851 /* YALCustomHeightTabBar.m */,
-			);
-			path = CustomHeightTabBar;
-			sourceTree = "<group>";
-		};
-		C92CAA4C1ACE8B7000F5645A /* FoldingTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				C92CAA4D1ACE8B7000F5645A /* Animation */,
-				C92CAA511ACE8B7000F5645A /* Category */,
-				C92CAA5A1ACE8B7000F5645A /* Constants */,
-				C92CAA5D1ACE8B7000F5645A /* Controller */,
-				C92CAA611ACE8B7000F5645A /* Model */,
-				C92CAA651ACE8B7000F5645A /* Protocol */,
-				C92CAA681ACE8B7000F5645A /* View */,
+				A502DF421FC5C5DD0050A3E7 /* Animation */,
+				A502DF461FC5C5DD0050A3E7 /* Category */,
+				A502DF521FC5C5DD0050A3E7 /* Constants */,
+				A502DF551FC5C5DD0050A3E7 /* Controller */,
+				A502DF591FC5C5DD0050A3E7 /* Model */,
+				A502DF5D1FC5C5DD0050A3E7 /* Resources */,
+				A502DF601FC5C5DD0050A3E7 /* View */,
 			);
 			name = FoldingTabBar;
 			path = ../../FoldingTabBar;
 			sourceTree = "<group>";
 		};
-		C92CAA4D1ACE8B7000F5645A /* Animation */ = {
+		A502DF421FC5C5DD0050A3E7 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA4E1ACE8B7000F5645A /* YALSpringAnimation */,
+				A502DF431FC5C5DD0050A3E7 /* YALSpringAnimation */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
 		};
-		C92CAA4E1ACE8B7000F5645A /* YALSpringAnimation */ = {
+		A502DF431FC5C5DD0050A3E7 /* YALSpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA4F1ACE8B7000F5645A /* YALSpringAnimation.h */,
-				C92CAA501ACE8B7000F5645A /* YALSpringAnimation.m */,
+				A502DF441FC5C5DD0050A3E7 /* YALSpringAnimation.h */,
+				A502DF451FC5C5DD0050A3E7 /* YALSpringAnimation.m */,
 			);
 			path = YALSpringAnimation;
 			sourceTree = "<group>";
 		};
-		C92CAA511ACE8B7000F5645A /* Category */ = {
+		A502DF461FC5C5DD0050A3E7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA521ACE8B7000F5645A /* CAAnimation */,
-				C92CAA561ACE8B7000F5645A /* CATransaction */,
+				A502DF471FC5C5DD0050A3E7 /* CAAnimation */,
+				A502DF4B1FC5C5DD0050A3E7 /* CATransaction */,
+				A502DF4F1FC5C5DD0050A3E7 /* UIView */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		C92CAA521ACE8B7000F5645A /* CAAnimation */ = {
+		A502DF471FC5C5DD0050A3E7 /* CAAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA531ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations */,
+				A502DF481FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations */,
 			);
 			path = CAAnimation;
 			sourceTree = "<group>";
 		};
-		C92CAA531ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations */ = {
+		A502DF481FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA541ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.h */,
-				C92CAA551ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m */,
+				A502DF491FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.h */,
+				A502DF4A1FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.m */,
 			);
 			path = "CAAnimation+YALTabBarViewAnimations";
 			sourceTree = "<group>";
 		};
-		C92CAA561ACE8B7000F5645A /* CATransaction */ = {
+		A502DF4B1FC5C5DD0050A3E7 /* CATransaction */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA571ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion */,
+				A502DF4C1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion */,
 			);
 			path = CATransaction;
 			sourceTree = "<group>";
 		};
-		C92CAA571ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+		A502DF4C1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA581ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
-				C92CAA591ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+				A502DF4D1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				A502DF4E1FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
 			);
 			path = "CATransaction+TransactionWithAnimationsAndCompletion";
 			sourceTree = "<group>";
 		};
-		C92CAA5A1ACE8B7000F5645A /* Constants */ = {
+		A502DF4F1FC5C5DD0050A3E7 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA5B1ACE8B7000F5645A /* YALAnimatingTabBarConstants.h */,
-				C92CAA5C1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m */,
+				A502DF501FC5C5DD0050A3E7 /* UIView+Insets.h */,
+				A502DF511FC5C5DD0050A3E7 /* UIView+Insets.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A502DF521FC5C5DD0050A3E7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF531FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.h */,
+				A502DF541FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		C92CAA5D1ACE8B7000F5645A /* Controller */ = {
+		A502DF551FC5C5DD0050A3E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA5E1ACE8B7000F5645A /* FoldingTabBarController */,
+				A502DF561FC5C5DD0050A3E7 /* FoldingTabBarController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C92CAA5E1ACE8B7000F5645A /* FoldingTabBarController */ = {
+		A502DF561FC5C5DD0050A3E7 /* FoldingTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA5F1ACE8B7000F5645A /* YALFoldingTabBarController.h */,
-				C92CAA601ACE8B7000F5645A /* YALFoldingTabBarController.m */,
+				A502DF571FC5C5DD0050A3E7 /* YALFoldingTabBarController.h */,
+				A502DF581FC5C5DD0050A3E7 /* YALFoldingTabBarController.m */,
 			);
 			path = FoldingTabBarController;
 			sourceTree = "<group>";
 		};
-		C92CAA611ACE8B7000F5645A /* Model */ = {
+		A502DF591FC5C5DD0050A3E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA621ACE8B7000F5645A /* TabBarItem */,
+				A502DF5A1FC5C5DD0050A3E7 /* TabBarItem */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C92CAA621ACE8B7000F5645A /* TabBarItem */ = {
+		A502DF5A1FC5C5DD0050A3E7 /* TabBarItem */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA631ACE8B7000F5645A /* YALTabBarItem.h */,
-				C92CAA641ACE8B7000F5645A /* YALTabBarItem.m */,
+				A502DF5B1FC5C5DD0050A3E7 /* YALTabBarItem.h */,
+				A502DF5C1FC5C5DD0050A3E7 /* YALTabBarItem.m */,
 			);
 			path = TabBarItem;
 			sourceTree = "<group>";
 		};
-		C92CAA651ACE8B7000F5645A /* Protocol */ = {
+		A502DF5D1FC5C5DD0050A3E7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A502DF5E1FC5C5DD0050A3E7 /* FoldingTabBar.h */,
+				A502DF5F1FC5C5DD0050A3E7 /* Info.plist */,
 			);
-			path = Protocol;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		C92CAA681ACE8B7000F5645A /* View */ = {
+		A502DF601FC5C5DD0050A3E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5B6430951C11E0E0005E8851 /* CustomHeightTabBar */,
-				C92CAA691ACE8B7000F5645A /* FoldingTabBar */,
+				A502DF611FC5C5DD0050A3E7 /* CustomHeightTabBar */,
+				A502DF641FC5C5DD0050A3E7 /* FoldingTabBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		C92CAA691ACE8B7000F5645A /* FoldingTabBar */ = {
+		A502DF611FC5C5DD0050A3E7 /* CustomHeightTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				C92CAA6A1ACE8B7000F5645A /* YALFoldingTabBar.h */,
-				C92CAA6B1ACE8B7000F5645A /* YALFoldingTabBar.m */,
+				A502DF621FC5C5DD0050A3E7 /* YALCustomHeightTabBar.h */,
+				A502DF631FC5C5DD0050A3E7 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		A502DF641FC5C5DD0050A3E7 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A502DF651FC5C5DD0050A3E7 /* YALFoldingTabBar.h */,
+				A502DF661FC5C5DD0050A3E7 /* YALFoldingTabBar.m */,
 			);
 			path = FoldingTabBar;
 			sourceTree = "<group>";
@@ -444,6 +462,7 @@
 				3EDA444A1AC5667500AE33CD /* LaunchScreen.xib in Resources */,
 				3EDA44421AC5667500AE33CD /* Proxima Nova Regular.otf in Resources */,
 				3EDA443D1AC5667500AE33CD /* Images.xcassets in Resources */,
+				A502DF6E1FC5C5DD0050A3E7 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,21 +473,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92CAA701ACE8B7000F5645A /* YALFoldingTabBarController.m in Sources */,
-				C92CAA6C1ACE8B7000F5645A /* YALSpringAnimation.m in Sources */,
-				C92CAA6D1ACE8B7000F5645A /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				A502DF671FC5C5DD0050A3E7 /* YALSpringAnimation.m in Sources */,
+				A502DF681FC5C5DD0050A3E7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				A502DF701FC5C5DD0050A3E7 /* YALFoldingTabBar.m in Sources */,
 				3EDA443F1AC5667500AE33CD /* main.m in Sources */,
+				A502DF6A1FC5C5DD0050A3E7 /* UIView+Insets.m in Sources */,
 				3EDA44441AC5667500AE33CD /* YALChatDemoCollectionViewCell.m in Sources */,
+				A502DF6D1FC5C5DD0050A3E7 /* YALTabBarItem.m in Sources */,
 				3EDA44451AC5667500AE33CD /* YALFirstTestViewController.m in Sources */,
-				C92CAA6F1ACE8B7000F5645A /* YALAnimatingTabBarConstants.m in Sources */,
 				3EDA44491AC5667500AE33CD /* YALThirdTestViewController.m in Sources */,
-				C92CAA721ACE8B7000F5645A /* YALFoldingTabBar.m in Sources */,
-				C92CAA6E1ACE8B7000F5645A /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				A502DF6B1FC5C5DD0050A3E7 /* YALAnimatingTabBarConstants.m in Sources */,
+				A502DF691FC5C5DD0050A3E7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				A502DF6C1FC5C5DD0050A3E7 /* YALFoldingTabBarController.m in Sources */,
+				A502DF6F1FC5C5DD0050A3E7 /* YALCustomHeightTabBar.m in Sources */,
 				3EDA44461AC5667500AE33CD /* YALFourthTestViewController.m in Sources */,
-				5B6430981C11E0E0005E8851 /* YALCustomHeightTabBar.m in Sources */,
 				3EDA443B1AC5667500AE33CD /* AppDelegate.m in Sources */,
 				3EDA44471AC5667500AE33CD /* YALSecondTestViewController.m in Sources */,
-				C92CAA711ACE8B7000F5645A /* YALTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 
 #import "YALCustomHeightTabBar.h"
 #import "YALAnimatingTabBarConstants.h"
+#import "UIView+Insets.h"
 
 @implementation YALCustomHeightTabBar
 
@@ -14,9 +15,9 @@
 
 - (CGFloat)barHeight {
     if (_barHeight != 0.f) {
-        return _barHeight;
+        return _barHeight + self.bottomInset;
     } else {
-        return YALTabBarViewDefaultHeight;
+        return YALTabBarViewDefaultHeight + self.bottomInset;
     }
 }
 
