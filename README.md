@@ -19,13 +19,13 @@ iOS 7.0
 #### [CocoaPods](http://cocoapods.org)
 
 ```ruby
-pod 'FoldingTabBar', '~> 1.1'
+pod 'FoldingTabBar', '~> 1.2'
 ```
 
 #### [Carthage](https://github.com/Carthage/Carthage)
 
 ```
-github "Yalantis/FoldingTabBar.iOS" ~> 1.1
+github "Yalantis/FoldingTabBar.iOS" ~> 1.2
 ```
 
 #### Manual Installation
